@@ -1,0 +1,750 @@
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/0_endlessspace.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/2D-EndlessSpaceDisharmony-UK.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Administrater_Corporate_2_Sophon.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Administrater_Corporate_Sophon.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/massive%20assault%2002_s.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://forum.alliance-francophone.net/html/emoticons/clin.gif
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/GC2.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/logo-Hoi2.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/GC2.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/dominionsII_map_ulm.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/TBFME.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/logo-Hoi2.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/gc2_image1.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/TBFME.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/HoI%20jaquette.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/logo-crusaderKings.gif
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/SHoWW2_box.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/logo-Hoi2.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/SHoWW2_box.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/TBFME.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/TBFME.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/TBFME.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/HoI%20jaquette.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/TA%20boitiernews.gif
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/knightsofhonor_logo_2lines.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/knightsofhonor_logo_2lines.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/logo-hoi2-2.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/Warham40000-1.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/logo-hoi2-2.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/logo-hoi2-2.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/knightsofhonor_logo_2lines.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/logo-hoi2-2.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/logo-hoi2-2.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/concours_redaction_js.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/concours_redaction_js.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/concours_redaction_js.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/W40K_logo.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/logo_cossacks2.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/logo_cossacks2.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/box%20AoX.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/W40_boite.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/armiesofexigo_1.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/logo_cossacks2.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/logo_cossacks2.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/logo-hoi2-2.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/KoH_castle.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/logo_cossacks2.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/cossacks%202.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/logo_cossacks2.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/logo_cossacks2.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/logo_cossacks2.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/CossacksII-french.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/CossacksII-french.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/CossacksII-french.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/logo-Hoi2.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/CossacksII-french.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/TA%20boitiernews.gif
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/CossacksII-french.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/logo%20E3.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/Company%20of%20Heroes_logo.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/logo%20E3.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/ss3_tilogo.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/Petit%20desert_law1.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/cossacks%202.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/SupremeCommander2.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://forum.alliance-francophone.net/html/emoticons/fleche.gif
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/SupremeCommander2.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/RiseOfLegend.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/BKAnthologie.gif
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.alliance-francophone.net/fileadmin/images/Strategium/Galactic_Civilisation_II/galciv2box.gif
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/SC_imageAlbum.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/SC_avion_terriens.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://forum.alliance-francophone.net/html/emoticons/clin.gif
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/SC_terrien_3.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/CossacksII-french.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/SC_imageAlbum.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.alliance-francophone.net/fileadmin/images/Strategium/Galactic_Civilisation_II/galciv2box.gif
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/travaux.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.alliance-francophone.net/fileadmin/images/Strategium/Grandes_Invasions/Logo-grandes-invasions-x200.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.alliance-francophone.net/fileadmin/images/Strategium/Galactic_Civilisation_II/galciv2box.gif
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.alliance-francophone.net/fileadmin/images/Strategium/Diplomacy/Logo-Diplomacyx150.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/Codename%20Panzers%20phase%20II_boite.gif
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://forum.alliance-francophone.net/html/emoticons/clin.gif
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/offciers_logo.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.alliance-francophone.net/fileadmin/images/Strategium/Diplomacy/Logo-Diplomacyx150.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.alliance-francophone.net/fileadmin/images/JS/civ4civfr_news.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.alliance-francophone.net/fileadmin/images/Strategium/IMAGES_NEWS/NEWS_HoI2.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://forum.alliance-francophone.net/html/emoticons/clin.gif
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://forum.alliance-francophone.net/html/emoticons/clin.gif
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.alliance-francophone.net/fileadmin/images/Strategium/IMAGES_NEWS/NEWS_Doomsday.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.alliance-francophone.net/fileadmin/images/Strategium/IMAGES_NEWS/NEWS_HoI2.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.alliance-francophone.net/fileadmin/images/Strategium/IMAGES_NEWS/NEWS_SR2010.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.alliance-francophone.net/fileadmin/images/Strategium/IMAGES_NEWS/NEWS_SR2010.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/bk2_logo.gif
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/SS3_siteFireglow.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.alliance-francophone.net/fileadmin/images/JS/Article_Fantasy/HAE_logo_trans_w.gif
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.alliance-francophone.net/fileadmin/images/Strategium/IMAGES_NEWS/NEWS_Doomsday.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.alliance-francophone.net/fileadmin/images/Strategium/IMAGES_NEWS/NEWS_BOA.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.alliance-francophone.net/fileadmin/images/JS/Article_Fantasy/HAE_logo_trans_w.gif
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.alliance-francophone.net/fileadmin/images/Strategium/IMAGES_NEWS/NEWS_BOA.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/articles/3945/ImagesConcours/concours3945.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.alliance-francophone.net/fileadmin/images/Strategium/IMAGES_NEWS/NEWS_Doomsday.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.alliance-francophone.net/fileadmin/images/Strategium/IMAGES_NEWS/NEWS_BOA.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.alliance-francophone.net/fileadmin/images/JS/Article_Fantasy/HAE_logo_trans_w.gif
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://forum.alliance-francophone.net/html/emoticons/clin.gif
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.alliance-francophone.net/fileadmin/images/JS/Stranger_logo.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.alliance-francophone.net/fileadmin/images/JS/art_rol_logo_header.gif
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.alliance-francophone.net/fileadmin/images/JS/Article_Fantasy/HAE_logo_trans_w.gif
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.alliance-francophone.net/fileadmin/images/JS/Article_Fantasy/HAE_logo_trans_w.gif
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.alliance-francophone.net/fileadmin/images/JS/art_rol_logo_header.gif
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.alliance-francophone.net/fileadmin/images/Strategium/IMAGES_NEWS/NEWS_EU3.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.alliance-francophone.net/fileadmin/images/JS/art_rol_logo_header.gif
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.alliance-francophone.net/fileadmin/images/Strategium/IMAGES_NEWS/NEWS_HoI2.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/0_endlessspace.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/2D-EndlessSpaceDisharmony-UK.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Administrater_Corporate_2_Sophon.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Administrater_Corporate_Sophon.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Amoeba%20Adventurer.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Amoeba%20Commander.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Amoeba%20Corporate%20Pilot.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Amoeba%20Fleet.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Amoeba%20Large%20Spaceship%20Concept.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Amoeba%20Leader.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Amoeba%20Small%20Spaceship%20Concept.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Automaton_illus_lifestyle_03_v03.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Corporate_Commander_Sophon.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Deep_Space_Facility.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Diplomacy_and_Trading_technology_tree.png
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Endless%20Space%20-%20Hissho%20Large%20Spaceship%20Concept.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Endless%20Space%20-%20Hissho%20Medium%20Spaceship%20Concept.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Endless%20Space%20-%20Hissho%20Pursuit.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Endless%20Space%20-%20Hissho%20Small%20Spaceship%20Concept.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Endless%20Space%20-%20Horatio%20Fleet.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Endless%20Space%20-%20Horatio%20and%20his%20Clones.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Endless%20Space%20Concept%20Large%20Sophon.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Endless%20Space%20Sophon%20Fleet%20CMYK.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Endless%20Space%20Sophon%20Illustration.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Endless-Space-Keyart.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Endless_Space_-_Planetary_View_RGB.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Endless_Space_Battle_2_CMYK.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Endless_Space_Battles_The_Cravers_vs_United_Empire_CMYK.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Endless_Space_Concept_Large_Sophon.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Endless_Space_Diplomacy_CMYK.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Endless_Space_Empire_Management_CMYK.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Endless_Space_Exploration_The_Cravers_Fleet_CMYK.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Endless_Space_Galaxy_2_CMYK.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Endless_Space_Galaxy_View_CMYK.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Endless_Space_Hero_Bio_CMYK.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Endless_Space_Keyart_-full.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Endless_Space_Military_View_CMYK.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Endless_Space_Planet_View_CMYK.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Endless_Space_Sophon_Fleet_CMYK.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Endless_Space_Sophon_Illustration.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Endless_Space_Spaceship_Design_CMYK.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Endless_Space_System_View_CMYK.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Endless_Space_Tech_Tree_2_CMYK.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Endless_Space_Tech_Tree_CMYK.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Endless_Space_The_Cravers_Battle_Fleet.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Endless_Space_The_Cravers_Invasion.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Endless_Space_The_Cravers_Large_Concept.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Endless_Space_The_Cravers_Small_Concept.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Endless_Space_United_Empire_Battle.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Endless_Space_United_Empire_Large_Concept.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Endless_Space_United_Empire_Small_Concept.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Endless_Space_United_Empire_Throne.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Endless_Terraforming.png
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Exploration_and_Expansion_technology_tree.png
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Galactic_warfare_technologies.png
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Hissho_Coronation.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Hissho_War_Ritual.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Military_View_CMYK.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Pilgrim%20Corporate%20Commander.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Pilgrims%20Exploration.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Pilgrims%20Large%20Spaceship%20Concept.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Pilgrims%20Medium%20Spaceship%20Concept%20Alternative.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Pilgrims%20Medium%20Spaceship%20Concept.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Pilgrims%20Moon%20Survey.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Pilgrims%20Nomad%20City.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Pilgrims%20Small%20Spaceship%20Concept%20Alternative.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Pilgrims%20Small%20Spaceship%20Concept.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Sciences_technology_tree.png
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Sophon_Illu_02.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Sophon_Leaders.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Sower%20Admininstrator%20Adventurer.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Sower%20Administrator%20Commander.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Sower%20Administrator%20Corporate.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Sower%20Leader.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Sower%20Small%20Spaceship%20Concept.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Sowers%20Terraforming.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/The_Dust_Collective.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/The_Harmony.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/The_Virus.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/Trade.png
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/automatondesign.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/banniere-polaris.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/newfactions6-3.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/newsfaction3_1.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/fileadmin/images/JS/Endless_Space/newsfaction6-6.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/massive%20assault%2002_s.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://forum.alliance-francophone.net/html/emoticons/clin.gif
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/GC2.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/logo-Hoi2.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/GC2.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/massive%20assault%2002_s.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://forum.alliance-francophone.net/html/emoticons/clin.gif
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/GC2.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/logo-Hoi2.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/GC2.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/massive%20assault%2002_s.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://forum.alliance-francophone.net/html/emoticons/clin.gif
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/GC2.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/logo-Hoi2.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/GC2.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/massive%20assault%2002_s.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://forum.alliance-francophone.net/html/emoticons/clin.gif
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/GC2.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/logo-Hoi2.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/GC2.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/massive%20assault%2002_s.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://forum.alliance-francophone.net/html/emoticons/clin.gif
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/GC2.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/logo-Hoi2.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/GC2.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/massive%20assault%2002_s.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://forum.alliance-francophone.net/html/emoticons/clin.gif
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/GC2.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/logo-Hoi2.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/GC2.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/massive%20assault%2002_s.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://forum.alliance-francophone.net/html/emoticons/clin.gif
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/GC2.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/logo-Hoi2.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/GC2.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/massive%20assault%2002_s.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://forum.alliance-francophone.net/html/emoticons/clin.gif
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/GC2.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/logo-Hoi2.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/GC2.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/massive%20assault%2002_s.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://forum.alliance-francophone.net/html/emoticons/clin.gif
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/GC2.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/logo-Hoi2.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/GC2.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/massive%20assault%2002_s.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://forum.alliance-francophone.net/html/emoticons/clin.gif
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/GC2.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/logo-Hoi2.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/GC2.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://www.jeux-strategie.com/upload/news/massive%20assault%2002_s.jpg
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
+Fichier utilisé à double : http://forum.alliance-francophone.net/html/emoticons/clin.gif
+111, /Users/sam/Dropbox/Mandats/Samba/RGS/jeux-strategie.com/Dev/htdocs/wpimporter/classes/wp/Gallery.php
+
