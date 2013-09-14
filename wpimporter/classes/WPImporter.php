@@ -12,7 +12,8 @@ class WPImporter
     {
         $this->log = $log = Log::getInstance();
         $this->teo = new TypoExporter($log);
-        $this->bdd = new PDO('mysql:host='.HOST.';dbname='.BD_NAME_WP.'', ''.LOGIN.'', ''.PASSWORD.'', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES UTF8'));
+        $this->bdd = new PDO('mysql:host='.HOST.';dbname='.BD_NAME_WP.'', ''.LOGIN.'', ''.PASSWORD.'', array(PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
+                                                                                                             PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES UTF8'));
 
         //$this->log->fr( $this->teo->arbre );
         Tools::printStructure($this->teo->arbre);
@@ -127,8 +128,10 @@ class WPImporter
         $req2 = $this->bdd->prepare($sql2);
         $i_posts = 1;
         foreach ($posts as $post) {
-            $req1->execute(array($i_posts, $post['id']));
-            $req2->execute(array($i_posts, $post['id']));
+            $req1->execute(array($i_posts,
+                $post['id']));
+            $req2->execute(array($i_posts,
+                $post['id']));
             $i_posts++;
         }
 
@@ -136,7 +139,8 @@ class WPImporter
         $req = $this->bdd->prepare($sql);
         $i_postmetas = 1;
         foreach ($postmetas as $post) {
-            $req->execute(array($i_postmetas, $post['id']));
+            $req->execute(array($i_postmetas,
+                $post['id']));
             $i_postmetas++;
         }
 
@@ -239,9 +243,12 @@ class WPImporter
         print_r($value);
         echo '</pre>';
 
-        $value[] = array("texte" => "import text", "acf_fc_layout" => "contenu_sur_une_colonne");
+        $value[] = array("texte"         => "import text",
+                         "acf_fc_layout" => "contenu_sur_une_colonne");
 
-        $value[] = array("colonne_de_gauche" => "import gauche", "colonne_de_droite" => "import droite", "acf_fc_layout" => "contenu_sur_deux_colonnes");
+        $value[] = array("colonne_de_gauche" => "import gauche",
+                         "colonne_de_droite" => "import droite",
+                         "acf_fc_layout"     => "contenu_sur_deux_colonnes");
 
         update_field($field_key, $value, $postid);
 
