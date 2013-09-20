@@ -14,4 +14,8 @@ define('BD_NAME' , "sam_rgs_p01_typo3");
 // Nom BD de Wordpress
 define('BD_NAME_WP' , "sam_rgs_wordpress");
 
+// executable mysqldump
+define('MYSQLDUMP', '/usr/local/bin/mysqldump');
+define('MYSQL', '/usr/local/bin/mysql');
+
 ?>

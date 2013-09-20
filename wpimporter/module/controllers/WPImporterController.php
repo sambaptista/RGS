@@ -50,31 +50,6 @@ class WPImporterController
      *****************************************************************/
 
 
-    public function importeFichesJeu()
-    {
-        $ficheJeu = new FichesJeu($this->teo->fiches_de_jeu, $this->teo->genres, $this->log);
-    }
-
-    public function importeGalleries()
-    {
-        $galeries = new Gallery($this->teo->galeries, $this->log);
-    }
-
-    public function importeNews()
-    {
-        $news = new News($this->teo->news, $this->log);
-    }
-
-    public function importePages()
-    {
-        $pages = new Page($this->teo->arbre, $this->teo->html_externe, $this->log);
-    }
-
-    public function importeTests()
-    {
-        $tests = new FicheTest($this->teo->fiches_test, $this->log);
-    }
-
 
     public static function testimport()
     {

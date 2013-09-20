@@ -12,7 +12,6 @@
         <link href="css/global.css" rel="stylesheet" media="screen">
     </head>
     <body>
-
         <div id='#body'>
             <h1>Bienvenue dans l'exporteur Typo3 -> Wordpress</h1>
             <h2>Choisissez la section à importer : </h2>
@@ -31,12 +30,19 @@
 
             <?php
                 try{
-                    if (isset($_REQUEST['action'] )) {
-                        $action = $_REQUEST['action'];
+
+                    if (isset($_GET['action'] )) {
+                        $action = $_GET['action'];
                         WPImporterController::$action();
-                    } elseif (isset($_GET['section'])) {
-                        $wpimporter = new WPImporterController($_GET['section']);
+
+                    } else if (isset($_GET['migration'])) {
+                        $action = $_GET['migration'];
+                        MigrationToolsController::$action();
+
+                    } else if (isset($_GET['section'])) {
+                        WPImporterController($_GET['section']);
                     }
+
                 }catch(Exception $e){
                     echo $e->getMessage();
                 }
