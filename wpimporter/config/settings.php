@@ -3,6 +3,7 @@
 /****************************************************************
 	CONNEXION AU SERVEUR DE LA BD
 *****************************************************************/
+
 define('HOST', 'localhost');
 define('LOGIN', "root");
 define('PASSWORD', "root");
