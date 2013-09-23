@@ -32,6 +32,7 @@ ini_set('include_path',     ini_get('include_path').
 define('ABS_PATH', '..'.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'wordpress'.DIRECTORY_SEPARATOR.'htdocs');
 
 
+define('LOG_PATH', $_SERVER['DOCUMENT_ROOT'].'/data/logs/');
 
 
 /****************************************************************
