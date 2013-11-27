@@ -3,7 +3,7 @@
 class WPImporterController
 {
     public $teo; // typo exporter object
-
+    private static $urls = array();
 
     public function __construct($section)
     {
@@ -39,15 +39,13 @@ class WPImporterController
         }
 
 
-        echo '<pre>';
-        print_r(Page::$link_replacement);
+        fr(Page::$link_replacement);
         echo '*************';
-        print_r(Page::$link_domain);
-        echo '</pre>';
+        fr(Page::$link_domain);
 
-        Page::replaceLinks();
+        self::replaceLinks();
 
-        f('Taille de la BD : '.$bdd->displayBDSize(), ' weight2');
+        f('Taille de la BD : '.RGSBD::getInstance()->displayBDSize(), ' weight2');
         f('*** Importation terminée ****', 'weight4 success');
     }
 
@@ -74,7 +72,7 @@ class WPImporterController
 
     public function buildGenresIndex()
     {
-        foreach( self::$fiches as $key => $fiche)
+        foreach( self::$fiches as $fiche)
         {
             $genres = $fiche['newsType'];
             if( isset($genres) && sizeof($genres) >0 )
@@ -154,25 +152,24 @@ class WPImporterController
     }
 
 
-
-
-
-
     /** Import media from url
      *
      * @param string $file_url URL of the existing file from the original site
-     * @param int $post_id The post ID of the post to which the imported media is to be attached
+     * @param $new_filename
+     * @param int $post_id     The post ID of the post to which the imported media is to be attached
      *
      * @return boolean True on success, false on failure
      */
 
     public static function fetch_media($file_url, $new_filename, $post_id =0)
     {
+        global $wpdb;
+
         // si le fichier a déjà été importé, on retourne directement l'id
         if( isset( self::$urls[$file_url] )) {
-            $message = 'Fichier utilisé à double : '.$id_fichier_local;
+            $message = 'Fichier utilisé à double : '.$file_url;
             error_log($message.chr(10).__LINE__.", ".__FILE__.chr(10).chr(10), 3, LOG_PATH.'/debug_error_log.txt');
-            return self::$urls[$id_fichier_local];
+            return self::$urls[$file_url];
         }
 
         //directory to import to
@@ -184,7 +181,7 @@ class WPImporterController
         }
 
         //rename the file... alternatively, you could explode on "/" and keep the original file name
-        $ext = array_pop(explode(".", $file_url));
+        array_pop(explode(".", $file_url));
 
         if (@fclose(@fopen($file_url, "r"))) { //make sure the file actually exists
             copy($file_url, ABSPATH.$artDir.$new_filename);
@@ -193,7 +190,6 @@ class WPImporterController
             $file_info = getimagesize(ABSPATH.$artDir.$new_filename);
 
             //create an array of attachment data to insert into wp_posts table
-            $artdata = array();
             $artdata = array
             (
                 'post_author' => 1,
@@ -251,22 +247,12 @@ class WPImporterController
 
 
 
-
-
-
-
-
-
-
-
-
-
     /**
      * Nettoie le code des artifices html
-     * @param $content l'html sale qu'il faut nettoyer
+     * @param $element Contient l'html à nettoyer
      */
 
-    public function createCleanPage( $element )
+    public function createCleanPage ($element)
     {
         if( isset($element['content']['contenu_page']) && is_array($element['content']['contenu_page']))
         {
@@ -287,10 +273,10 @@ class WPImporterController
                 $filename_dirty = 'output/html_sale/'.$element['id'].'-'.Tools::cleanFilename($element['name']).'.html';
                 $filename = 'output/html_propre/'.$element['id'].'-'.Tools::cleanFilename($element['name']).'.html';
 
-                $this->log->p('created '. $filename, 'weight1');
+                p('created '. $filename, 'weight1');
 
                 file_put_contents($filename_dirty, $dirty_html);
-                file_put_contents($filename, $clean_txt);
+                file_put_contents($filename, $clean_html);
             }
         }
     }
@@ -303,7 +289,7 @@ class WPImporterController
 
     /**
      * Nettoie l'html des ses artifices
-     * @param $content l'html sale qu'il faut nettoyer
+     * @param $dirty_html content l'html sale qu'il faut nettoyer
      */
 
     public static function cleanHtml($dirty_html)
@@ -399,12 +385,12 @@ class WPImporterController
         $imagesUrls = array();
         for( $i=0; $i< $images->length; $i++)
         {
-            $cheminArray = explode('/', $images->item($i)->getAttribute('src') ); // séparre l'url dans un tableau selon les /
-            $name = array_pop($cheminArray); // récupère le nom du fichier et l'enlève du tableau. On va s'en servir pour le nettoyer et qu'il soit propre dans wp
-            $chemin = implode('/', $cheminArray); // reconstitue l'url sans le nom du fichier au bout
+            $cheminArray = explode('/', $images->item($i)->getAttribute('src') );                   // sépare l'url dans un tableau selon les /
+            $name = array_pop($cheminArray);                                                        // récupère le nom du fichier et l'enlève du tableau. On va s'en servir pour le nettoyer et qu'il soit propre dans wp
+            $chemin = implode('/', $cheminArray);                                                   // reconstitue l'url sans le nom du fichier au bout
 
-            $attach_id = Gallery::fetch_media( 	$chemin.'/'.str_replace(' ', '%20', $name), Tools::cleanFilename($name, $time) ); // ajoute l'image via wp
-            $new_img_url = wp_get_attachment_url($attach_id); // récupère l'url de l'image
+            $attach_id = self::fetch_media($chemin.'/'.str_replace(' ', '%20', $name), Tools::cleanFilename($name, $time) ); // ajoute l'image via wp
+            $new_img_url = wp_get_attachment_url($attach_id);                                        // récupère l'url de l'image
             $content = str_replace( $images->item($i)->getAttribute('src'), $new_img_url, $content); // remplace la veille url pointant sur typo par celle pointant vers le nouveau fichier
         }
 
@@ -442,8 +428,6 @@ class WPImporterController
     /****************************************************************
             Tests
     *****************************************************************/
-
-
 
 
     public static function testimport()

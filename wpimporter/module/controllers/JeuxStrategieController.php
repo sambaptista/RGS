@@ -90,9 +90,7 @@ class JeuxStrategieControler
 
      public function __construct()
      {
-
-         $this->log = $log = Log::getInstance();
-         $this->teo = new TypoExporterController($log);
+         $this->teo = new TypoExporterController();
 
          $bdd = RGSBD::getInstance();
          $bdd->resetWP();
