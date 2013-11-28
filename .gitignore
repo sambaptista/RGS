@@ -1,6 +1,7 @@
 ipb/
 .DS_Store
 .idea
+wordpress/htdocs/wp-config.php
 wpimporter/config/settings.php
 wpimporter/data/output/html_propre/*
 wpimporter/data/output/html_sale/*
