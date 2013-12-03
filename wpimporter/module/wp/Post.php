@@ -41,7 +41,6 @@ class Post
                 'post_status' => $visibility
             ));
 
-
         if ($ID == 0) {
             $message = self::getPostType() . " : ". $name . ", Not inserted";
             Log::logError($message, __LINE__, __FILE__);
@@ -57,12 +56,7 @@ class Post
         return self::findById($ID);;
     }
 
-    /**
-     * Find in the data source the specified ID. If no datasource specified, search in wp database by typo id.
-     *
-     * @param $id
-     * @return mixed
-     */
+
     public static function findByTypoId($id)
     {
         $query = new WP_Query(array('typo_id' => $id));
@@ -76,7 +70,6 @@ class Post
         } else {
             return null;
         }
-
     }
 
 

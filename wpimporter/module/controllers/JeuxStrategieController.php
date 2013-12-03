@@ -28,7 +28,7 @@ class JeuxStrategieController
 
     public function __construct()
     {
-        $resetTaxonomies = true;
+        $resetTaxonomies = false;
 
         $this->teo = new TypoExporterController();
 //        fr(($this->teo->fiches_de_jeu));
@@ -101,11 +101,9 @@ class JeuxStrategieController
             wp_set_object_terms($fiche->ID, (int) $section->ID, Section::$term_type);
 
 
-/*
-            fr('---');
             // définition des champs personnalisés acf
             // add_post_meta( $post_id, 'note', 	$fiche['note'] ); // équivalent en natif wordpress
-            fr(update_field( ACF_FJ_DATE_DE_SORTIE, utf8_decode( $data['dateSortie']), $fiche->ID ));
+            update_field( ACF_FJ_DATE_DE_SORTIE, utf8_decode($data['dateSortie']), $fiche->ID );
             $values = array(
                 array(
                     "adresse" => utf8_decode( Tools::getUrl($data['site'])),
@@ -123,8 +121,7 @@ class JeuxStrategieController
                 )
             );
 
-            fr(update_field( ACF_FJ_SITES, $values , $fiche->ID ));
-*/
+            update_field(ACF_FJ_SITES, $values, $fiche->ID);
         }
 
         // insère les fiches orphelines (fiches qui ont du contenu associé, mais qui n'existent pas elles même)

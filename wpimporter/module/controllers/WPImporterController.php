@@ -59,7 +59,7 @@ class WPImporterController
     {
         fr('test import');
         //$fiche = Game::create('jeu test');
-        $fiche = Game::findById(2306);
+        $fiche = Game::findById(4189);
 
 
         // date de sortie
@@ -79,12 +79,12 @@ class WPImporterController
             "colonne_de_droite" => "import droite",
             "acf_fc_layout" => "contenu_sur_deux_colonnes"
         );
-
+        $value[] = array(
+            "colonne_de_gauche" => "import gauche 2",
+            "colonne_de_droite" => "import droite 2",
+            "acf_fc_layout" => "contenu_sur_deux_colonnes"
+        );
 
         $res = update_field($field_key, $value, $fiche->ID);
-
-        fr($res);
-
     }
-
 }
