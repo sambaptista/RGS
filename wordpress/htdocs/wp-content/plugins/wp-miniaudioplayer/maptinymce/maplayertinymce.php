@@ -70,7 +70,7 @@ if (!headers_sent()) {
         <label>
             <span class="label">Don't render: </span>
             <input type="checkbox" name="exclude" value="true"/>
-            <span class="help-inline">check to exclude this link</span>
+            <span class="help-inline">check to exclude this link (<?php echo $exclude_class ?>)</span>
         </label>
 
         <label>
@@ -264,7 +264,7 @@ if (!headers_sent()) {
 
 <script type="text/javascript">
 
-    function getFromMetatags(){
+    function getFromMetatags(title){
         if (typeof ID3 == "object") {
             ID3.loadTags(document.audioURL, function () {
                 var info = {};
@@ -272,7 +272,10 @@ if (!headers_sent()) {
                 info.artist = ID3.getTag(document.audioURL, "artist");
                 info.album = ID3.getTag(document.audioURL, "album");
                 info.track = ID3.getTag(document.audioURL, "track");
-                jQuery("[name='audiotitle']").val(info.title + " - " +info.artist);
+                if(info.title)
+                    jQuery("[name='audiotitle']").val(info.title + " - " +info.artist);
+                else
+                    jQuery("[name='audiotitle']").val(title);
             })
         }
     }
@@ -301,6 +304,7 @@ if (!headers_sent()) {
         isExcluded = $selection.hasClass("<?php echo $exclude_class ?>");
 
         var $desc = $selection.next(".map_params");
+        console.debug($desc)
         var metadata = $selection.metadata();
 
         if(metadata.volume)
@@ -328,10 +332,7 @@ if (!headers_sent()) {
 
         var getFromMeta = <?php echo $metadata ?>;
 
-        if(getFromMeta){
-            getFromMetatags();
-        }else
-            jQuery("[name='audiotitle']").val(title);
+        jQuery("[name='audiotitle']").val(title);
 
         for (var i in metadata){
             if(typeof metadata[i] == "boolean"){
@@ -378,8 +379,10 @@ if (!headers_sent()) {
                 map_params+="}";
                 map_params = map_params.replace(", }", "}");
 
+                var isExcluded = jQuery("[name='exclude']").is(":checked") ? "<?php echo $exclude_class ?> " : "";
+
                 var map_a = "<a id='mbmaplayer_"+new Date().getTime()+"' class=";
-                map_a += "\"" + map_params + "\" ";
+                map_a += "\"mb_map " + isExcluded + map_params + "\" ";
                 map_a += "href=\""+jQuery("[name='url']").val()+"\">";
                 map_a+=jQuery("[name='audiotitle']").val();
                 map_a+="</a>";
@@ -388,8 +391,11 @@ if (!headers_sent()) {
                 if($desc.length)
                     $desc.remove();
 
-                var map_desc="<textarea disabled class='map_params' style='display:block; padding: 3px; background: #444;color:#fff; text-decoration: none;'>map :: "+map_params+"</textarea>";
-                ed.execCommand('mceInsertContent', 0, map_desc);
+                /*
+                 var map_desc="<span class='map_params' style='display:block; width: 100px;font-family: arial, sans-serif; padding: 5px; border-radius: 7px; background: #6f6f6f;color:#fff; text-decoration: none'> ▶ custom player</span>";
+                 if(!isExcluded)
+                 ed.execCommand('mceInsertContent', 0, map_desc);
+                 */
 
                 tinyMCEPopup.close();
 

@@ -31,8 +31,8 @@ class JeuxStrategieController
         $resetTaxonomies = true;
 
         $this->teo = new TypoExporterController();
-        fr(Tools::getStructure($this->teo->fiches_de_jeu));
-        return;
+//        fr(($this->teo->fiches_de_jeu));
+//        return;
         Rgsbd::getInstance()->resetWP($resetTaxonomies,true,true);
 
 
@@ -84,7 +84,7 @@ class JeuxStrategieController
         foreach($this->teo->fiches_de_jeu as $typoId => $data)
         {
             f($data['nomJeu'], 'weight2');
-            $fiche = FicheJeu::create($data['nomJeu'], array('typo_id' => $typoId));
+            $fiche = Game::create($data['nomJeu'], array('typo_id' => $typoId));
 
             $genres = array();
             foreach( $data['genre'] as $genre)
@@ -97,13 +97,15 @@ class JeuxStrategieController
             wp_set_object_terms($fiche->ID, $genres, Genre::$term_type);
 
             // sections
-            //$section = Section::findByName('jeux-stragegie.com');
-            //wp_set_object_terms($fiche->ID, array($section->ID), Section::$term_type);
+            $section = Section::findByName('jeux-stragegie.com');
+            wp_set_object_terms($fiche->ID, (int) $section->ID, Section::$term_type);
 
 
+/*
+            fr('---');
             // définition des champs personnalisés acf
             // add_post_meta( $post_id, 'note', 	$fiche['note'] ); // équivalent en natif wordpress
-            update_field( ACF_FJ_DATE_DE_SORTIE, utf8_decode( $data['dateSortie']), $fiche->ID );
+            fr(update_field( ACF_FJ_DATE_DE_SORTIE, utf8_decode( $data['dateSortie']), $fiche->ID ));
             $values = array(
                 array(
                     "adresse" => utf8_decode( Tools::getUrl($data['site'])),
@@ -120,14 +122,15 @@ class JeuxStrategieController
                     "acf_fc_layout" => "développeur"
                 )
             );
-            update_field( ACF_FJ_SITES, $values , $fiche->ID );
 
+            fr(update_field( ACF_FJ_SITES, $values , $fiche->ID ));
+*/
         }
 
         // insère les fiches orphelines (fiches qui ont du contenu associé, mais qui n'existent pas elles même)
         foreach( self::$fiches_orphelines as $virtualTypId => $data)
         {
-            FicheJeu::create($data, array('typo_id' => $virtualTypId), 'draft');
+            Game::create($data, array('typo_id' => $virtualTypId), 'draft');
         }
 
     }

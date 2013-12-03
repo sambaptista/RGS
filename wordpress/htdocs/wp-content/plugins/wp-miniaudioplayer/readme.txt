@@ -3,8 +3,8 @@
 Contributors: pupunzi
 Tags: audio player, mp3, HTML5 audio, audio, music, podcast, jquery, pupunzi, mb.components
 Requires at least: 3.3
-Tested up to: 3.5
-Stable tag: 1.3.5
+Tested up to: 3.7
+Stable tag: 1.4.2
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DSHAHSJJCQ53Y
 
 Transform your mp3 audio files into a nice, small light HTML5 player
@@ -70,6 +70,32 @@ to change the player default settings go to the mb.miniAudioPlayer settings pane
 * @ excluded = a string containing the CSS class for audio links that should not be converted into player.
 
 == Changelog ==
+
+= 1.4.2 =
+* fixed a bug that made the progress bar flicker.
+
+= 1.4.1 =
+* fixed a bug that could create conflict with other plugins using "string.prototype.asId"
+* Feature: created a more robust map_download.php for the file download that falls back to three methods: fopen(), curl() or readfile() depending on server support.
+
+= 1.4.0 =
+* Download now get file size
+* fixed a font problem on the player
+
+= 1.3.9 =
+* Feature: No more injection of extra code into the tinyMCE while customizing the player.
+* Optimization of the download method both in JS and PHP.
+
+= 1.3.8 =
+* Bug fix: The "Don't render" option was not working anymore.
+* Feature: Removed the gray textarea for the custom player from the post editor.
+
+= 1.3.7 =
+* Bug fix: on multiple Ajax call the player was initialized each time. Solved.
+
+= 1.3.6 =
+* The player initializer is call on every Ajax success callback to show players loaded via Ajax.
+
 
 = 1.3.5 =
 * Updated TinyMCE js header.

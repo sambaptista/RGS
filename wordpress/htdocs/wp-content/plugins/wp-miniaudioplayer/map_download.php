@@ -1,13 +1,24 @@
 <?php
 /**
- * Download the mp3 file.
+ * Download file.
  */
 $file_name = $_GET["filename"];
 $file_url = $_GET["fileurl"];
 $filename = basename ($file_url) ;
-//$filesize = filesize($dir_name);
 $file_extension = strtolower (substr (strrchr ($filename, '.'), 1)) ;
 
+
+function getFileSize($url) {
+    if (substr($url,0,4)=='http') {
+        $x = array_change_key_case(get_headers($url, 1),CASE_LOWER);
+        if ( strcasecmp($x[0], 'HTTP/1.1 200 OK') != 0 ) { $x = $x['content-length'][1]; }
+        else { $x = $x['content-length']; }
+    }
+    else { $x = @filesize($url); }
+    return $x;
+}
+
+$filesize = getFileSize($file_url);
 
 //This will set the Content-Type to the appropriate setting for the file
 switch ($file_extension)
@@ -78,34 +89,45 @@ switch ($file_extension)
         $content_type = 'application/force-download' ;
 }
 
-//die($file_extension ."   ". $content_type ."   ". $file_name ."   ". $file_url."   ". ini_get('allow_url_fopen'));
-
-/*ob_clean();
-flush();*/
+//die("<br> - file_extension::  ". $file_extension ."<br> - content_type::  ". $content_type ."<br> - file_name::  ". $file_name ."<br> - file_url::  ". $file_url ."<br> - file size::  ". $filesize . "<br> - curl exist::  ". function_exists('curl_version') ."<br> - allow_url_fopen::  ". ini_get('allow_url_fopen'));
 
 header ('Pragma: public') ;
 header ('Expires: 0') ;
 header ('Cache-Control: must-revalidate, post-check=0, pre-check=0') ;
-header ('Cache-Control: public') ;
+header ('Cache-Control: private') ;
 header ('Content-Type: ' . $content_type);
-//header('Content-Type: application/force-download');
 header("Content-Description: File Transfer");
 header("Content-Transfer-Encoding: Binary");
 header("Content-disposition: attachment; filename=\"".$filename."\"");
-//header('Content-Length: '.$filesize+1);
+header('Content-Length: '.$filesize);
+header('Connection: close');
 
+if($fp=@fopen($file_url,'rb')){
+    sleep(1);
+    ignore_user_abort();
+    set_time_limit(0);
+    while(!feof($fp))
+    {
+        echo (@fread($fp, 1024*8));
+        ob_flush();
+        flush();
+    }
+    fclose ($fp);
 
-if(!ini_get('allow_url_fopen')){
+}else if(function_exists('curl_version')){
+
     $ch = curl_init();
     curl_setopt ($ch, CURLOPT_URL, $file_url);
     curl_setopt ($ch, CURLOPT_RETURNTRANSFER, 1);
     $contents = curl_exec($ch);
+    // display file
+    echo $contents;
     curl_close($ch);
 
-// display file
-    echo $contents;
 }else{
-    readfile($file_url);
+    @readfile ($file_url) ;
 }
+
+clearstatcache();
 
 exit;

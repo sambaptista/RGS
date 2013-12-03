@@ -1,6 +1,6 @@
 <?php
 
-class FicheJeu extends Post
+class Game extends Post
 {
     public static $post_type = 'games';
 }

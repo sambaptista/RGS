@@ -52,30 +52,38 @@ class WPImporterController
 
 
     /****************************************************************
-    Tests
-     *****************************************************************/
+            Tests
+    *****************************************************************/
 
     public static function testimport()
     {
+        fr('test import');
+        //$fiche = Game::create('jeu test');
+        $fiche = Game::findById(2306);
 
+
+        // date de sortie
+        $field_key = ACF_FJ_DATE_DE_SORTIE;
+        update_field( $field_key, '123132123', $fiche->ID );
+
+        // contenu
         $field_key = "field_51bb867b1aed0";
-        $postid = 174778;
-
-        $value = get_field($field_key, $postid);
-
-        echo '<pre>';
-        print_r($value);
-        echo '</pre>';
+        $value = get_field($field_key, $fiche->ID);
 
         $value[] = array(
-            "texte" => "import text", "acf_fc_layout" => "contenu_sur_une_colonne"
+            "texte" => "import text",
+            "acf_fc_layout" => "contenu_sur_une_colonne"
         );
-
         $value[] = array(
-            "colonne_de_gauche" => "import gauche", "colonne_de_droite" => "import droite", "acf_fc_layout" => "contenu_sur_deux_colonnes"
+            "colonne_de_gauche" => "import gauche",
+            "colonne_de_droite" => "import droite",
+            "acf_fc_layout" => "contenu_sur_deux_colonnes"
         );
 
-        update_field($field_key, $value, $postid);
+
+        $res = update_field($field_key, $value, $fiche->ID);
+
+        fr($res);
 
     }
 

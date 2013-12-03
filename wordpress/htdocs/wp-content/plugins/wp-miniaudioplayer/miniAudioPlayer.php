@@ -4,11 +4,11 @@ Plugin Name: mb.miniAudioPlayer
 Plugin URI: http://wordpress.org/extend/plugins/wp-miniaudioplayer/
 Description: Transform your mp3 audio file link into a nice, small light player
 Author: Pupunzi (Matteo Bicocchi)
-Version: 1.3.5
+Version: 1.4.2
 Author URI: http://pupunzi.com
 */
 
-define("MINIAUDIOPLAYER_VERSION", "1.3.5");
+define("MINIAUDIOPLAYER_VERSION", "1.4.2");
 register_activation_hook( __FILE__, 'miniAudioPlayer_install' );
 
 function miniAudioPlayer_install() {
@@ -112,13 +112,8 @@ function miniAudioPlayer_player_head() {
 	<!-- start miniAudioPlayer initializer -->
 	<script type="text/javascript">
 
-    if(!map) var map={};
-    map.downloadUrl = "'.plugins_url( 'map_download.php', __FILE__ ).'";
-    map.userCanDownload = '.(current_user_can('read') == 1 ? "true" : "false").';
-
-
-	jQuery(function(){
-           	jQuery("a[href*=\'.mp3\'] ,a[href*=\'.m4a\']")'.getExcluded().'mb_miniPlayer({
+    function initializeMiniAudioPlayer(){
+         jQuery("a[href*=\'.mp3\'] ,a[href*=\'.m4a\']")'.getExcluded().'mb_miniPlayer({
 				inLine:true,
                 width:"'.$miniAudioPlayer_width.'",
 				skin:"'.$miniAudioPlayer_skin.'",
@@ -130,8 +125,16 @@ function miniAudioPlayer_player_head() {
 				id3:'.$miniAudioPlayer_getMetadata.',
 				showRew:'.$miniAudioPlayer_showRew.',
 				downloadable:'.canDownload().',
+				downloadPage:"'.plugins_url( 'map_download.php', __FILE__ ).'",
 				swfPath:"'.plugins_url( '/js/', __FILE__ ).'"
-			});
+		});
+    }
+
+	jQuery(function(){
+          initializeMiniAudioPlayer();
+          jQuery(document).ajaxSuccess(function(event, xhr, settings) {
+           	initializeMiniAudioPlayer();
+          });
 	});
 	</script>
 	<!-- end miniAudioPlayer initializer -->
@@ -165,6 +168,12 @@ function canDownload(){
 
 // TinyMCE Button ***************************************************
 
+function map_add_editor_styles() {
+    add_editor_style( plugins_url( 'css/TinyMCE_player.css', __FILE__ ) );
+}
+add_action( 'init', 'map_add_editor_styles' );
+
+
 // Set up our TinyMCE button
 function setup_maplayer_button()
 {
@@ -196,21 +205,21 @@ function get_maplayer_pop_up_params(){
 
     return urlencode(
         'plugin_version='.$miniAudioPlayer_version.'&'.
-            'includes_url='.urlencode(includes_url()).'&'.
-            'plugins_url='.urlencode(plugins_url()).'&'.
-            'charset='.urlencode(get_option('blog_charset')).'&'.
-            'exclude_class='.$miniAudioPlayer_excluded.'&'.
-            'showVolumeLevel='.$miniAudioPlayer_showVolumeLevel.'&'.
-            'showTime='.$miniAudioPlayer_showTime.'&'.
-            'showRew='.$miniAudioPlayer_showRew.'&'.
-            'width='.$miniAudioPlayer_width.'&'.
-            'skin='.$miniAudioPlayer_skin.'&'.
-            'animate='.$miniAudioPlayer_animate.'&'.
-            'volume='.$miniAudioPlayer_volume.'&'.
-            'downloadable='.$miniAudioPlayer_download.'&'.
-            'metadata='.$miniAudioPlayer_getMetadata .'&'.
-            'downloadable_security='.$miniAudioPlayer_download_security.'&'.
-            'donate='.$miniAudioPlayer_donate
+        'includes_url='.urlencode(includes_url()).'&'.
+        'plugins_url='.urlencode(plugins_url()).'&'.
+        'charset='.urlencode(get_option('blog_charset')).'&'.
+        'exclude_class='.$miniAudioPlayer_excluded.'&'.
+        'showVolumeLevel='.$miniAudioPlayer_showVolumeLevel.'&'.
+        'showTime='.$miniAudioPlayer_showTime.'&'.
+        'showRew='.$miniAudioPlayer_showRew.'&'.
+        'width='.$miniAudioPlayer_width.'&'.
+        'skin='.$miniAudioPlayer_skin.'&'.
+        'animate='.$miniAudioPlayer_animate.'&'.
+        'volume='.$miniAudioPlayer_volume.'&'.
+        'downloadable='.$miniAudioPlayer_download.'&'.
+        'metadata='.$miniAudioPlayer_getMetadata .'&'.
+        'downloadable_security='.$miniAudioPlayer_download_security.'&'.
+        'donate='.$miniAudioPlayer_donate
     );
 }
 

@@ -54,7 +54,7 @@ class Post
             }
         }
 
-        return $ID;
+        return self::findById($ID);;
     }
 
     /**

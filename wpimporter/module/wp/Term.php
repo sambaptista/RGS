@@ -29,8 +29,6 @@ class Term
 
     public static function create($name)
     {
-        fr($name . ' - ' .is_numeric($name));
-
         if(is_numeric($name)) {
             $message = self::getTermType() . " ". $name . ", Not inserted, numeric given. String expected";
             Log::logError($message, __LINE__, __FILE__);
@@ -38,7 +36,6 @@ class Term
         }
         $term = self::findByName($name);
 
-        fr($term);
         if ($term) {
             return $term;
         } else {
