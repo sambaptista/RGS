@@ -1,0 +1,19 @@
+Pour tester le rendu des differents formats de pub, tu dois ajouter dans la page d'accueil à :
+
+<div id="pub_rg_pave"></div>
+
+Soit ceci ( format 350 * 250 ) : <img src="img/BlocPub300x250.png" alt="" />
+Soit ceci ( format 350 * 600 ) : <img src="img/BlocPub300x600.png" alt="" />
+
+Et tu auras la simulation des différents rendu avec la pub.
+
+
+
+Rappel toi également qu'il y a l'habillage à gérer. ( regarde la page accueil2 ).
+Voici la procédure pour l'intégré : http://forum.reseau-js.com/topic/78116-id-pour-les-divs-pub/?p=1052628315
+
+
+! IMPORTANT !
+
+SI TU MODIFIES LA FACON DE FAIRE POUR INTEGRER UN HABILLAGE, SURTOUT METS A JOUR LE TOPIC SUR LE FORUM POUR EXPLIQUER COMMENT FAIRE DE UN ET COMMENT FAIRE AVEC WORDPRESS.
+

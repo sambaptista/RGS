@@ -94,20 +94,5 @@ function create_jeux_taxonomies()
 	  'show_ui' => true,
 	  'query_var' => true
 	));
-
-  
-  
-  
-  
-  
-  
   
 }
-
-
-
-
-
-
-
-?>

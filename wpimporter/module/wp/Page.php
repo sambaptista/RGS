@@ -3,10 +3,7 @@
 class Page extends Post
 {
 
-	public $log;	
-	public static $pages;
-	public static $html_externe;
-
+    public static $post_type = 'page';
 
 	/*
 	*	A chaque produit inséré, on ajoute l'url typo et la nouvelle url page afin de remplacer dans l'html les liens et éviter un maximum de redirections
@@ -85,7 +82,7 @@ class Page extends Post
 
 			if( isset($page['id_parent']) && is_numeric($page['id_parent']) && $page['id_parent'] != 1504 )
 			{	
-				$parentPage = $this->getPageByTypoID($page['id_parent']);
+				$parentPage = $this->findByTypoId($page['id_parent']);
 				$params['post_parent'] = $parentPage['wp_post_id'];
 			}
 			else

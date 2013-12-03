@@ -2,8 +2,7 @@
 
 class News extends Post
 {
-    public $news;
-    public $log;
+    public static $post_type = 'post';
 
     public function __construct($array, $log)
     {
@@ -76,7 +75,7 @@ class News extends Post
             $this->news[$key]['wp_post_id'] = $post_id; // on enregistre l'id wp du post fraichement créé.
 
             // on va chercher les jeux liés pour les rattacher
-            $jeux_lies = FichesJeu::getJeuxByGameLink($news['liaison_news']);
+            $jeux_lies = FichesJeu::getAttachedGames($news['liaison_news']);
 
             if (sizeof($jeux_lies) > 0) {
                 $values = array();

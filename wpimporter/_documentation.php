@@ -73,44 +73,44 @@ $data = array(
 										...
 									)
 		),
-		
-		'fiches_test' => array(  // FICHE DE TEST
-			'13729' => array(
-						'nom' = "...",
-						'liaison_jeu' = array(),
-						'lesPlus' => array(
-										0 => "...",
-										1 => '...',
-										...
-									),
-						'lesMoins' => array(
-										0 => "...",
-										1 => '...',
-										...
-									),
-						'configuration' => '...',
-						'notation' => array(
-										'jouabiliteNote' => '16',
-										'jouabiliteComment' => '...',
-										'graphismeNote' => '15',
-										'graphismeComment' => '...',
-										'bandeSonNote' => '16',
-										'bandeSonComment' => '...',
-										'multiNote' => '12',
-										'multiComment' => '...',
-										'soloNote' => '13',
-										'soloComment' => 'Campagne plate et monotone'
-									),
-						'noteGlobale' => '3',
-						'commentaire' => '...'
-			),
-		
-			'13730' => array(
-				...
-			),
-		
-			...
-		),
+
+    'fiches_test' => array(  // FICHE DE TEST
+        '13729' => array(
+                    'nom' = "...",
+                    'liaison_jeu' = array(),
+                    'lesPlus' => array(
+                                    0 => "...",
+                                    1 => '...',
+                                    ...
+                                ),
+                    'lesMoins' => array(
+                                    0 => "...",
+                                    1 => '...',
+                                    ...
+                                ),
+                    'configuration' => '...',
+                    'notation' => array(
+                                    'jouabiliteNote' => '16',
+                                    'jouabiliteComment' => '...',
+                                    'graphismeNote' => '15',
+                                    'graphismeComment' => '...',
+                                    'bandeSonNote' => '16',
+                                    'bandeSonComment' => '...',
+                                    'multiNote' => '12',
+                                    'multiComment' => '...',
+                                    'soloNote' => '13',
+                                    'soloComment' => 'Campagne plate et monotone'
+                                ),
+                    'noteGlobale' => '3',
+                    'commentaire' => '...'
+        ),
+
+        '13730' => array(
+            ...
+        ),
+
+        ...
+    ),
 	
 	
 	'galeries' => array( // GALERIES
@@ -201,7 +201,6 @@ $data = array(
  		)
 		...
 	), 
-	
 
 
 )

@@ -42,6 +42,7 @@ define('LOG_PATH', $_SERVER['DOCUMENT_ROOT'].'/data/logs/');
 require_once('settings.php');
 require_once('HTMLPurifier.auto.php');
 
+
 // wordpress classes
 require_once(ABS_PATH.'/wp-load.php');
 require_once(ABS_PATH.'/wp-includes/post.php');
@@ -146,7 +147,5 @@ function autoload($className){
     }
 }
 spl_autoload_register('autoload');
+$log = Log::getInstance();
 
-
-
-?>

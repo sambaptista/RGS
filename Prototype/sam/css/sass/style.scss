@@ -1,0 +1,299 @@
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* Reset Css html5 */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+html,body,div,span,object,iframe,
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+abbr,address,cite,code,
+del,dfn,em,img,ins,kbd,q,samp,
+small,strong,sub,sup,var,
+b,i,
+dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,
+table,caption,tbody,tfoot,thead,tr,th,td,
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary,
+time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;}
+body{line-height:1;}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section{display:block;}
+nav ul{list-style:none;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,
+q:before,q:after{content:'';content:none;}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;}
+/* change colours to suit your needs */
+ins{background-color:#ff9;color:#000;text-decoration:none;}
+/* change colours to suit your needs */
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold;}
+del{text-decoration:line-through;}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help;}
+table{border-collapse:collapse;border-spacing:0;}
+/* change border colour to suit your needs */
+hr{display:block;height:1px;border:0;border-top:1px solid #cccccc;margin:1em 0;padding:0;}
+input,select{vertical-align:middle;}
+
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* Imports */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+@import "variables";
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* General */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+body{
+    font-family:$rgs-font-paragraph;
+    background: $rgs-background;
+}
+
+.body{
+    width:$rgs-body-size;
+    padding:0 $rgs-default-body-padding;
+    margin:0 auto 0 auto;
+}
+
+
+#div{
+    background:$rgs-color;
+    width:100px;
+    height:100px;
+    margin:200px;
+    @include round(20px);
+}
+
+//#navbar li { @include rounded-top-left; }
+//#footer { @include rounded-top-left; }
+
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* Network Bar */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#network-bar{
+    $height:32px;
+    height:$height;
+    line-height:$height;
+    background:black;
+    border-bottom:2px solid $rgs-color-light;
+
+
+    #network-logo{
+        margin-right:30px
+    }
+
+    .network-element{
+        display:inline-block;
+        vertical-align:top;
+        height:$height - 3px;
+        margin-top:3px;
+
+        li{
+            display:inline-block;
+            vertical-align:top;
+            &:last-child a{border-right:none;}
+        }
+
+        a{
+            display:inline-block;
+            vertical-align:top;
+            height:20px;
+            line-height: 20px;
+            padding:0 7px 0 4px;
+            margin: 5px 0px;
+            color:white;
+            font-size:11px;
+            text-decoration:none;
+            border-right:1px solid #fff;
+            &:hover{border-bottom:1px solid $rgs-color;}
+        }
+    }
+
+    #login{
+        float:right;
+        height:$height;
+        font-size:11px;
+        color:#000000;
+        font-weight:bold;
+        background:url(../deco/bg_login.png) no-repeat;
+        margin:0 50px 0 0;
+
+        form{
+            position:relative;
+            right:-50px;
+            width:310px;
+            padding-right:50px;
+            background:url(../deco/bg_login.png) no-repeat right;
+        }
+
+        #login-form{
+            padding: 8px;
+            @include round-b;
+            background:#ff9030;
+            display:none;
+            position:absolute;
+
+            &.show{display:block;}
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* Category Bar */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#category-bar{
+    background:url(../deco/bg_categories.png);
+    width:$rgs-body-size;
+    padding:0 $rgs-default-body-padding;
+    height:99px;
+    margin:50px auto 0 auto;
+
+}
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* Section nav bar */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#section-nav-bar{
+    width:$rgs-body-size + 2*$rgs-default-body-padding;
+    height:49px;
+    line-height:49px;
+    margin:auto;
+    background:url(../deco/bg_body_top_left.png) no-repeat;
+    text-align:right;
+    position:relative;
+
+    ul{
+        display:inline-block;
+        vertical-align:top;
+        min-width:200px;
+        height:43px;
+
+        padding-left:35px;
+        background:url(../deco/bg_body_top_center.png) no-repeat;
+        margin-right:10px;
+        position:relative;
+
+        &:after{
+            content:' ';
+            position:relative;
+            top:-7px;
+            heigh:0px;
+            display:block;
+            border-bottom:1px solid #ccc;
+            padding:0 50px;
+        }
+
+        li{
+            display:inline-block;
+            vertical-align:top;
+            position:relative;
+            right:-10px;
+            font-size:14px;
+
+            a{
+                color:#333333;
+                text-decoration:none;
+                padding:0 16px 0 4px;
+
+                &:hover{
+                    border-bottom:1px solid $rgs-color;
+                }
+            }
+
+            &:last-child{
+                padding-right:10px;
+                background:url(../deco/bg_body_top_right.png) no-repeat right;
+
+            }
+
+            .rgs &:after{
+                content:'JS';
+                color:$rgs-color;
+                position:relative;
+                left:-12px;
+
+            }
+        }
+    }
+}
+
+
+
+#body{
+    width:$rgs-body-size;
+    padding:10px $rgs-default-body-padding;
+    margin: 0 auto;
+    background:url(../deco/bg_body_vertical.png) repeat-y;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -40,7 +40,7 @@
                         MigrationToolsController::$action();
 
                     } else if (isset($_GET['section'])) {
-                        WPImporterController($_GET['section']);
+                        new WPImporterController($_GET['section']);
                     }
 
                 }catch(Exception $e){

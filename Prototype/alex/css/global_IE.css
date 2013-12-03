@@ -1,0 +1,279 @@
+@ Charset "UTF-8";
+
+#lien_reseau{
+	*margin-top: 9px;
+}
+	#logo_barre_reseau{
+		*margin-top: -6px;
+		*margin-right: 25px;
+	}
+
+#login_logout_cote_droit{
+	*float: none;
+}
+
+#menu{
+	margin-top: -5px;
+	*margin-top: 10px;
+}
+
+	#top_jeu{
+		font-size: 11px;
+	}
+
+		#top_jeu ul{
+			right: 20px;
+			top: 3px;
+			*margin-left: 40px;
+		}
+	
+		#top_jeu li{
+			margin-right: 2px;
+			margin-left: 2px;
+		}
+	
+		li#no_move{
+			margin-right: 24px;
+		}
+		
+		:root li#no_move{
+			margin-right: 35px\0/IE9;
+		}
+	
+		:root li#no_move{
+			margin-left: 4px\0/IE9;
+		}
+	
+
+		img#logo_list_top_jeu{
+			height: 7px;
+			*top: 0;
+			*height: 7px;
+		}
+
+	#menu_site{
+		*margin-left: 320px;
+		font-size: 13px;
+	}
+	
+	:root #menu_site{
+		font-size: 14px\0/IE9;
+	}
+	
+		#menu_site ul{
+			margin-top: 34px;
+		}
+	
+			#menu_site li, #site_reseau li, #lien_reseau li, #info_reseau li, #menu_site_footer li{
+				margin-right: 4px;
+				margin-left: 4px;
+				*margin-right: 0;
+			}
+
+				img.img_menu{
+					height: 16px;
+					height: 15px\0/;
+					*height: 15px;
+					top: 1px;
+				}
+
+			li#logo_menu{
+				*float: none;
+			}
+
+			li#logo_menu img{
+				height: 17px\0/;
+				*height: 16px;
+			}
+			
+			li.separator{
+				*margin-left: 6px !important;
+			}
+			
+			#top_jeu li.separator{
+				*margin-left: 3px !important;
+			}
+			
+			:root #top_jeu li.separator{
+				margin-left: 2px\0/IE9 !important;
+				margin-right: 2px\0/IE9 !important;
+			}
+			
+:root #block_blogs ul{
+	padding-top: 2px\0/IE9 !important;
+	padding-bottom: 13px\0/IE9 !important;
+}
+			
+#site_reseau, #info_reseau, #menu_site_footer{
+	*margin-top: 8px;
+}
+	
+#contenu_une{
+	filter : alpha(opacity=80);
+}
+	
+	#contenu_une H1{
+		*margin-top: 13px;
+		*margin-bottom: 12px;
+	}
+	
+	:root #contenu_une .lire_suite{
+		margin-top: 10px\0/IE9 !important;
+	}
+	
+	#no_opacity{
+		filter : alpha(opacity=100);
+	}
+		
+	#contenu_une .lire_suite{
+		*margin-top: 10px;	
+	}
+	
+.img_news, .titre_news h2{
+	*margin-top: 16px;
+}
+
+.info_news{
+	*margin-top: 2px;
+	*margin-bottom: 13px;
+}
+
+.contenu_news .lire_suite{
+	*margin-top: 15px;
+}
+
+	:root #block_dossiers{
+		padding-top: 7px;
+		padding-bottom: 16px;
+	}
+	
+	 #block_dossiers{
+		*padding-top: 21px;
+		*padding-bottom: 12px;
+	}
+	
+	#block_test_video{
+		*float: none;
+	}
+	
+		.titre_test_video{
+			filter : alpha(opacity=80);
+		}
+	
+			.titre_test_video h3{
+				filter : alpha(opacity=100);
+				*margin-top: 11px;
+			}
+			
+			:root .titre_test_video h3{
+				margin-top: 11px\0/IE9;
+			}
+		
+		:root #proposer_test_video{
+			height: 24px;
+			padding-top: 10px\0/IE9;
+		}
+
+:root #sondage{
+	margin-top: 46px\0/IE9 !important;
+}
+
+:root #derniere_news, :root #direct_forum{
+	margin-top: 17px\0/IE9 !important;
+}
+
+#sondage{
+	*margin-top: 40px !important;
+}
+
+	:root #block_sondage{
+		height: 193px\0/IE9;
+	}
+	
+		#question{
+			font-size: 12px\9;
+			*font-size: 13px;
+		}
+		
+		#block_sondage ul{
+			*margin-top: 15px;
+			*margin-bottom: 15px;
+		}
+		
+			#block_sondage li{
+				font-size: 11px;
+			}
+			
+	.radio{
+		bottom: 2px;
+		*bottom: 1px;
+	}
+	
+	:root .radio{
+		bottom: 1px\0/IE9 !important;
+	}
+			
+:root body.pub250 #direct_forum{
+	margin-top: 26px\0/IE9 !important;
+}
+
+body.pub250 #direct_forum{
+	*margin-top: 45px !important;
+}
+
+	:root body.pub250 #block_forums{
+		padding-bottom: 4px\0/IE9 !important;
+	}
+	
+:root body.pub600 #derniere_news{
+	margin-top: 43px\0/IE9 !important;
+}
+
+	:root body.pub600 #block_news ul{
+		padding-bottom: 14px;
+	}	
+
+body.pub600 #derniere_news{
+	*margin-top: 77px !important;
+}
+
+#titre_sommaire li{
+	*zoom: 1;
+	*display: inline;
+}
+
+#contenu h2{
+	*font-size: 20px;
+}
+
+#contenu h3{
+	*font-size: 15px;
+}
+
+#contenu h4{
+	*font-size: 13px;
+}
+
+#contenu h2, #contenu h3, #contenu h4{
+	*margin-top: 15px;
+	*margin-bottom: 15px;
+}
+
+#contenu p, #block_commentaire p, #block_commentaire span, #contenu span, #contenu ul, #block_commentaire ul{
+	*margin-top: 10px;
+	*margin-bottom: 10px;
+}
+
+#contenu li{
+	*margin-left: 30px;
+}
+
+#form_login_2 a{
+	top: 2px\9;
+}
+
+.vote_commentaire{
+	*float: none;
+	*margin-left: 50px;
+}
+

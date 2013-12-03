@@ -3,11 +3,8 @@
 
 class FicheTest extends Post
 {
+    public static $post_type = 'test';
 
-	public static $fiches;
-	public static $newsCats = array();
-	public $log;
-		
 	public function __construct($array, $log)
 	{
 		$this->log = $log;
@@ -117,10 +114,4 @@ class FicheTest extends Post
 		
 	}
 
-
-
-
-
 }
-
-?>
