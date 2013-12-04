@@ -6,6 +6,22 @@ class Post
     public $ID;
     public $post_object;
 
+    /*
+    *	A chaque produit inséré, on ajoute l'url typo et la nouvelle url page afin de remplacer dans l'html les liens et éviter un maximum de redirections
+    *	Pré-rempli avec les liens vers l'accueil
+    */
+    public static $link_replacement = array(
+        //		array(
+        //			'url_typo' => NOM_DE_DOMAINE,
+        //			'url_wp ' => '/'
+        //		)
+        //		,
+        //		array(
+        //			'url_typo' => str_replace('http://', '', NOM_DE_DOMAINE),
+        //			'url_wp ' => '/'
+        //		)
+    );
+
     protected function __construct($post_object)
     {
         $this->post_object = $post_object;
@@ -33,13 +49,28 @@ class Post
         return $class::$post_type;
     }
 
-    public static function create($name, $post_meta = null, $visibility = 'publish')
+    public static function create($name, $post_meta = null, $params = null)
     {
-        $ID = wp_insert_post(array(
-                'post_title' => $name,
-                'post_type' => self::getPostType(),
-                'post_status' => $visibility
-            ));
+        if(empty($name)) {
+            $message = self::getPostType() . " ". $name . ", Not created, no name given";
+            throw new Exception($message);
+        }
+
+        $localParams = array('post_title' => $name, 'post_type' => self::getPostType());
+
+        if (is_array($params)) {
+            $localParams = array_merge($localParams, $params);
+        }
+        if (!isset($localParams['post_status'])) {
+            $localParams['post_status'] = 'publish' ;
+        }
+        if(!isset($localParams['post_date'])) {
+            $date = new DateTime();
+            $localParams['post_date'] = $date->format('Y-m-d H:i:s');
+        }
+
+        fr($localParams);
+        $ID = wp_insert_post($localParams);
 
         if ($ID == 0) {
             $message = self::getPostType() . " : ". $name . ", Not inserted";
@@ -59,19 +90,57 @@ class Post
 
     public static function findByTypoId($id)
     {
-        $query = new WP_Query(array('typo_id' => $id));
+        if (!is_numeric($id) && $id <= 0 ) return null;
 
-        if (isset($query->posts[0]) && isset($query->posts[0]['ID'])) {
-            $ID = $query->posts['ID'];
-            $obj = $query->posts[0];
-            $post = newThis($ID, $obj);
+        $query = new WP_Query(
+            array(
+                'post_type' => self::getPostType(),
+                'meta_key' => 'typo_id',
+                'meta_value' => $id
+            )
+        );
 
-            return $post;
+        if (is_array($query->posts) && count($query->posts)==1) {
+            return self::newClass($query->posts[0]);
         } else {
             return null;
         }
     }
 
+
+    public function tagTypoId($id)
+    {
+        update_field( ACF_TYPO_ID, $id, $this->ID );
+    }
+
+    public function tagTypoUrl($url)
+    {
+        update_field( ACF_TYPO_URL, $url, $this->ID );
+    }
+
+    public function setAttachedGames($elements)
+    {
+        //fr('attach games');
+        //fr($elements);
+        if( sizeof($elements) > 0)
+        {
+            $games = array();
+            foreach ($elements as $typoId) {
+                if ( !empty($typoId) && is_numeric($typoId) && $typoId > 0) {
+                    //fr('add game');
+                    $game = Game::findByTypoId($typoId);
+                    $games[] = $game->ID;
+                }
+            }
+            //fr($games);
+            update_field( ACF_JEUX_LIES , $games, $this->ID );
+        }
+    }
+
+    public function addAttachedGame($game)
+    {
+        update_field( ACF_JEUX_LIES , array($game->ID), $this->ID );
+    }
 
     public static function getAttachedGames($newsCategories)
     {
@@ -184,7 +253,7 @@ class Post
 
     public static function addLinkReplacement($url1, $url2)
     {
-        array_push(Page::$link_replacement, array(
+        array_push(self::$link_replacement, array(
             'url_typo' => $url1, 'url_wp' => $url2
         ));
     }

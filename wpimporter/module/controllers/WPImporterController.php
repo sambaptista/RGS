@@ -4,6 +4,7 @@ class WPImporterController
 {
     public $teo; // typo exporter object
     private static $urls = array();
+    protected $errors = array();
 
     public function __construct($section)
     {
@@ -38,14 +39,20 @@ class WPImporterController
             break;
         }
 
-//        fr(Page::$link_replacement);
+//        fr(Post::$link_replacement);
 //        echo '*************';
-//        fr(Page::$link_domain);
+//        fr(Post::$link_domain);
 //
 //        self::replaceLinks();
 
         f('Taille de la BD : ' . RGSBD::getInstance()->displayBDSize(), ' weight2');
-        f('*** Importation terminée ****', 'weight4 success');
+
+        if (count($this->errors) > 0 ){
+            f('*** Importation terminée avec des erreurs ****', 'weight4 error');
+            fr($this->errors, 'weight4 error');
+        } else {
+            f('*** Importation terminée ****', 'weight4 success');
+        }
     }
 
 
@@ -59,7 +66,37 @@ class WPImporterController
     {
         fr('test import');
         //$fiche = Game::create('jeu test');
-        $fiche = Game::findById(4189);
+        $fiche = Game::findById(18584);
+
+//        $meta_values = get_post_meta( $fiche->ID, 'typo_id');
+//        fr($meta_values);
+
+        $query = new WP_Query(
+            array(
+                'post_type' => 'page',
+                'meta_key' => 'typo_id',
+                'meta_value' => 1523));
+//
+//                'meta_query' => array(
+//                    'key' => 'typo_id',
+//                    'value' => 1523,
+//                    'type'    => 'NUMERIC',
+//                )
+//            )
+//        );
+
+        fr(count($query->posts));
+        foreach($query->posts as $post){
+            fr($post);
+            $meta_values = get_post_meta( $post->ID, 'typo_id');
+            fr($meta_values);
+        }
+
+        exit();
+
+        // typo id
+        $field_key = ACF_TYPO_ID;
+        update_field( $field_key, '123132123', $fiche->ID );
 
 
         // date de sortie

@@ -86,10 +86,7 @@ class Rgsbd
     }
 
 
-
     //// Reset BD
-
-
     private function resetTaxonomies()
     {
         // recreate
@@ -99,7 +96,6 @@ class Rgsbd
         // supprime les taxonomies
         $this->query("delete from wp_term_relationships");
         $this->query("delete from wp_term_taxonomy where term_taxonomy_id <> 1");
-
 
         // supprime les termes
         $this->query("delete from wp_terms where term_id <> 1");

@@ -1,6 +1,6 @@
 <?php
 
-class JeuxStrategieController
+class JeuxStrategieController extends WPImporterController
 {
     public static $fiches_orphelines = array(
         '100000' => 'Age Of Wonders : Shadow Magic', '100001' => 'Battle Mages', '100002' => 'Battle Realms', '100003' => 'Chaos League',
@@ -29,23 +29,25 @@ class JeuxStrategieController
     public function __construct()
     {
         $resetTaxonomies = false;
-
         $this->teo = new TypoExporterController();
-//        fr(($this->teo->fiches_de_jeu));
-//        return;
-        Rgsbd::getInstance()->resetWP($resetTaxonomies,true,true);
-
+        //frx(Tools::getStructure($this->teo->arbre));
+        Rgsbd::getInstance()->resetWP($resetTaxonomies, true, true);
 
         $this->insertSections();
-        if($resetTaxonomies) $this->insertGenres();
+        if ($resetTaxonomies) {
+            $this->insertGenres();
+        }
         $this->insertFiches();
+        $this->insertPages();
     }
-
 
     private function insertGenres()
     {
-        foreach( $this->teo->genres as $typoId => $genreName)
-        {
+        f('Genres', 'weight3');
+
+        foreach ($this->teo->genres as $typoId => $genreName) {
+            f($genreName, 'weight2');
+
             Genre::create($genreName, $typoId);
         }
     }
@@ -54,7 +56,6 @@ class JeuxStrategieController
     {
         Section::create('jeux-stragegie.com');
     }
-
 
     /*
     *
@@ -81,55 +82,86 @@ class JeuxStrategieController
     {
         f('Fiches de jeu', 'weight3');
 
-        foreach($this->teo->fiches_de_jeu as $typoId => $data)
-        {
-            f($data['nomJeu'], 'weight2');
-            $fiche = Game::create($data['nomJeu'], array('typo_id' => $typoId));
+        foreach ($this->teo->fiches_de_jeu as $typoId => $data) {
 
-            $genres = array();
-            foreach( $data['genre'] as $genre)
-            {
-                $genre = Genre::findByTypoId($genre);
-                array_push($genres, $genre->ID);
+            try{
+                f($data['nomJeu'], 'weight2');
+
+                $fiche = Game::create($data['nomJeu']);
+                $fiche->tagTypoId($typoId);
+
+                $genres = array();
+                foreach ($data['genre'] as $genre) {
+                    $genre = Genre::findByTypoId($genre);
+                    array_push($genres, $genre->ID);
+                }
+                $genres = array_map('intval', $genres);
+                $genres = array_unique($genres);
+                wp_set_object_terms($fiche->ID, $genres, Genre::$term_type);
+
+                // sections
+                $section = Section::findByName('jeux-stragegie.com');
+                wp_set_object_terms($fiche->ID, (int) $section->ID, Section::$term_type);
+
+                $fiche->addACFFields($data);
+
+            } catch (Exception $e) {
+                $this->errors[] = $e->getMessage();
+                Log::logError($e->getMessage(), __LINE__, __FILE__);
             }
-            $genres = array_map('intval', $genres);
-            $genres = array_unique( $genres );
-            wp_set_object_terms($fiche->ID, $genres, Genre::$term_type);
-
-            // sections
-            $section = Section::findByName('jeux-stragegie.com');
-            wp_set_object_terms($fiche->ID, (int) $section->ID, Section::$term_type);
-
-
-            // définition des champs personnalisés acf
-            // add_post_meta( $post_id, 'note', 	$fiche['note'] ); // équivalent en natif wordpress
-            update_field( ACF_FJ_DATE_DE_SORTIE, utf8_decode($data['dateSortie']), $fiche->ID );
-            $values = array(
-                array(
-                    "adresse" => utf8_decode( Tools::getUrl($data['site'])),
-                    "acf_fc_layout" => "site_officiel"
-                ),
-                array(
-                    "nom" => utf8_decode( Tools::getLinkText($data['editeur'])),
-                    "adresse" => utf8_decode( Tools::getUrl($data['editeur'])),
-                    "acf_fc_layout" => "editeur"
-                ),
-                array(
-                    "nom" => utf8_decode( Tools::getLinkText($data['developpeur'])),
-                    "adresse" => utf8_decode( Tools::getUrl($data['developpeur'])),
-                    "acf_fc_layout" => "développeur"
-                )
-            );
-
-            update_field(ACF_FJ_SITES, $values, $fiche->ID);
         }
 
-        // insère les fiches orphelines (fiches qui ont du contenu associé, mais qui n'existent pas elles même)
-        foreach( self::$fiches_orphelines as $virtualTypId => $data)
-        {
-            Game::create($data, array('typo_id' => $virtualTypId), 'draft');
+        // Insère les fiches orphelines (fiches qui ont du contenu associé, mais qui n'existent pas elles même)
+        foreach (self::$fiches_orphelines as $virtualTypId => $data) {
+            try{
+                $game = Game::create($data, null, array('post_status' => 'draft'));
+                $game->tagTypoId($virtualTypId);
+            } catch (Exception $e) {
+                $this->errors[] = $e->getMessage();
+                Log::logError($e->getMessage(), __LINE__, __FILE__);
+            }
         }
-
     }
 
+    /**
+     * Va créer une page qui comporte autant de documents qu'il y a de types de contenus dans la dite page.
+     * @todo : reste à exclure (à réfléchir) les types suivants lors de l'ajout :  galeries, tests et fiches de jeu (déjà fait puisque je ne les ajoute pas -> cible uniquement les types à insérer)
+     * @todo : ajouter les galeries et pièces jointes, vidéo, multimedia
+     */
+    public function insertPages()
+    {
+        f('Pages', 'weight3');
+
+        // create reference page for structure in Page menu in WP
+        $homePage = Page::create('JS');
+
+        // insertion des pages enfant
+        foreach ($this->teo->arbre as $i => $data) {
+            try {
+                fr('Page : ' . $data['id'] . ' - ' . $data['name'], 'weight2');
+
+                fr('parent typo id : ' .$data['id_parent']);
+
+                if (isset($data['id_parent']) && $data['id_parent'] != JEUX_STRATEGIE_COM) {
+                    $parent = Page::findByTypoId($data['id_parent']);
+                } else {
+                    $parent = $homePage;
+                }
+
+                $page = Page::create($data['name'], null, array('post_parent' => $parent->ID, 'post_date' => date('Y-m-d H:i:s', $data['date_creation'])));
+                $page->tagTypoId($data['id']);
+                $page->tagTypoURL($data['url']);
+                $page->setAttachedGames($data['liaison_jeu']);
+                $page->addACFFields($data['content']);
+                Post::addLinkReplacement($data['url'], get_permalink($page->ID));
+
+                if (defined(NB_PAGES) && $i == NB_PAGES) {
+                    break;
+                }
+            } catch (Exception $e) {
+                array_push($this->errors, $e->getMessage());
+                Log::logError($e->getMessage(), __LINE__, __FILE__);
+            }
+        }
+    }
 }

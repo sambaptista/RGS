@@ -98,31 +98,19 @@ define('ACF_JEUX_LIES', 'field_51b480bafa00f'); // define('ACF_JEUX_LIES_FIELD',
 // redactional content
 define('ACF_CONTENU_REDACTION', 'field_51bb867b1aed0');
 
-
-
-
+// Source data
+define('ACF_TYPO_ID', 'field_529c979a13907');
+define('ACF_TYPO_URL', 'field_529c979c13908');
 
 
 /****************************************************************
 	Constraints for import in wordpress
 *****************************************************************/
 
-define('NB_NEWS', 300000);
-define('NB_GALERIES', 0);
+define('NB_NEWS', 50);
+define('NB_GALERIES', 10);
 define('NB_IMG_PAR_GALERIE', 3);
-define('NB_PAGES', 30000);
-
-//define('NB_NEWS', 9999999999);
-//define('NB_GALERIES', 999999999999999999999);
-//define('NB_IMG_PAR_GALERIE', 3);
-//define('NB_PAGES', 9999999999);
-
-
-
-
-
-
-
+define('NB_PAGES', 50);
 
 
 

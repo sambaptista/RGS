@@ -34,12 +34,15 @@ get_header();
     endwhile;
 	
 	// récupère les news qui font référence à ce jeu
-	$news = new WP_Query( array(
-					    	'post_type' => 'post',
-					    	'meta_query' => array(
-								array('value' => $games_ids ) 
-							)
-						)
+	$news = new WP_Query(
+        array(
+            'post_type' => 'post',
+            'meta_query' => array(
+                array(
+                    'value' => $games_ids
+                )
+            )
+        )
 	);
 	
 
