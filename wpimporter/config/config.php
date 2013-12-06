@@ -101,6 +101,7 @@ define('ACF_CONTENU_REDACTION', 'field_51bb867b1aed0');
 // Source data
 define('ACF_TYPO_ID', 'field_529c979a13907');
 define('ACF_TYPO_URL', 'field_529c979c13908');
+define('ACF_INFO', 'field_529fa154ebe16');
 
 
 /****************************************************************

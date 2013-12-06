@@ -39,6 +39,7 @@ class JeuxStrategieController extends WPImporterController
         }
         $this->insertFiches();
         $this->insertPages();
+        $this->insertGalleries();
     }
 
     private function insertGenres()
@@ -138,9 +139,7 @@ class JeuxStrategieController extends WPImporterController
         // insertion des pages enfant
         foreach ($this->teo->arbre as $i => $data) {
             try {
-                fr('Page : ' . $data['id'] . ' - ' . $data['name'], 'weight2');
-
-                fr('parent typo id : ' .$data['id_parent']);
+                f('Page : ' . $data['id'] . ' - ' . $data['name'], 'weight2');
 
                 if (isset($data['id_parent']) && $data['id_parent'] != JEUX_STRATEGIE_COM) {
                     $parent = Page::findByTypoId($data['id_parent']);
@@ -152,7 +151,7 @@ class JeuxStrategieController extends WPImporterController
                 $page->tagTypoId($data['id']);
                 $page->tagTypoURL($data['url']);
                 $page->setAttachedGames($data['liaison_jeu']);
-                $page->addACFFields($data['content']);
+                $page->addACFFields($data['content'], $this->teo->html_externe);
                 Post::addLinkReplacement($data['url'], get_permalink($page->ID));
 
                 if (defined(NB_PAGES) && $i == NB_PAGES) {
@@ -161,6 +160,50 @@ class JeuxStrategieController extends WPImporterController
             } catch (Exception $e) {
                 array_push($this->errors, $e->getMessage());
                 Log::logError($e->getMessage(), __LINE__, __FILE__);
+            }
+        }
+    }
+
+
+
+    public function insertGalleries()
+    {
+
+        foreach ($this->teo->galleries as $typoId => $data) {
+
+            if (is_array($data['image']) && sizeof($data['image']) > 0) {
+
+                $gallery = Gallery::create($data['nom'], array('post_autor' => 1));
+
+                /****************************************************************
+                Linked games
+                 *****************************************************************/
+
+                if (sizeof(self::$data['liaison_jeu']) > 0) {
+                    $values = array();
+                    foreach (self::$data['liaison_jeu'] as $jeu_lie) {
+                        if (is_numeric($jeu_lie)) {
+                            $values[] = FichesJeu::$fiches[$jeu_lie]['wp_post_id'];
+                        }
+                    }
+                    update_field(ACF_JEUX_LIES, $values, self::$wpid);
+                }
+
+                /****************************************************************
+                Save in wordpress
+                 *****************************************************************/
+                foreach (self::$data['image'] as $pict_id => $pict) {
+                    $cheminArray = explode('/', $pict);
+                    $name = array_pop($cheminArray);
+                    $chemin = implode('/', $cheminArray);
+
+                    //self::$log->f('download img :   http://www.jeux-strategie.com/'.$chemin.'/'.str_replace(' ', '%20', $name), 'weight1');
+                    self::fetch_media('http://www.jeux-strategie.com/' . $chemin . '/' . str_replace(' ', '%20', $name), Tools::cleanFilename($name, time()), $data_id);
+
+                    if ($pict_id >= NB_IMG_PAR_GALERIE) {
+                        break;
+                    }
+                }
             }
         }
     }

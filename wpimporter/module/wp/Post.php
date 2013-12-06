@@ -6,10 +6,15 @@ class Post
     public $ID;
     public $post_object;
 
-    /*
-    *	A chaque produit inséré, on ajoute l'url typo et la nouvelle url page afin de remplacer dans l'html les liens et éviter un maximum de redirections
-    *	Pré-rempli avec les liens vers l'accueil
-    */
+    /**
+     *  Référence tous les liens différents du domaine, pour voir combien de liens pointent vers des pages du réseau. si le tableau est plus grand, c'est que certaines urls pointent nul part
+     */
+    public static $link_domain = array();
+
+    /**
+     *  A chaque produit inséré, on ajoute l'url typo et la nouvelle url page afin de remplacer dans l'html les liens et éviter un maximum de redirections
+     *	Pré-rempli avec les liens vers l'accueil
+     */
     public static $link_replacement = array(
         //		array(
         //			'url_typo' => NOM_DE_DOMAINE,
@@ -30,8 +35,11 @@ class Post
 
     public static function findById($id)
     {
-        if(!isset($id)) return null;
+        if (!isset($id)) {
+            return null;
+        }
         $post_object = WP_Post::get_instance($id);
+
         return self::newClass($post_object);
     }
 
@@ -51,8 +59,8 @@ class Post
 
     public static function create($name, $post_meta = null, $params = null)
     {
-        if(empty($name)) {
-            $message = self::getPostType() . " ". $name . ", Not created, no name given";
+        if (empty($name)) {
+            $message = self::getPostType() . " " . $name . ", Not created, no name given";
             throw new Exception($message);
         }
 
@@ -62,84 +70,74 @@ class Post
             $localParams = array_merge($localParams, $params);
         }
         if (!isset($localParams['post_status'])) {
-            $localParams['post_status'] = 'publish' ;
+            $localParams['post_status'] = 'publish';
         }
-        if(!isset($localParams['post_date'])) {
+        if (!isset($localParams['post_date'])) {
             $date = new DateTime();
             $localParams['post_date'] = $date->format('Y-m-d H:i:s');
         }
 
-        fr($localParams);
         $ID = wp_insert_post($localParams);
 
         if ($ID == 0) {
-            $message = self::getPostType() . " : ". $name . ", Not inserted";
+            $message = self::getPostType() . " : " . $name . ", Not inserted";
             Log::logError($message, __LINE__, __FILE__);
             throw new Exception($message);
         }
 
-        if (isset($post_meta) && is_array($post_meta) && count($post_meta) > 0 ) {
-            foreach($post_meta as $meta => $value) {
+        if (isset($post_meta) && is_array($post_meta) && count($post_meta) > 0) {
+            foreach ($post_meta as $meta => $value) {
                 update_post_meta($ID, $meta, $value);
             }
         }
 
-        return self::findById($ID);;
+        return self::findById($ID);
     }
-
 
     public static function findByTypoId($id)
     {
-        if (!is_numeric($id) && $id <= 0 ) return null;
+        if (!is_numeric($id) && $id <= 0) {
+            return null;
+        }
 
-        $query = new WP_Query(
-            array(
-                'post_type' => self::getPostType(),
-                'meta_key' => 'typo_id',
-                'meta_value' => $id
-            )
-        );
+        $query = new WP_Query(array(
+                'post_type' => self::getPostType(), 'meta_key' => 'typo_id', 'meta_value' => $id
+            ));
 
-        if (is_array($query->posts) && count($query->posts)==1) {
+        if (is_array($query->posts) && count($query->posts) == 1) {
             return self::newClass($query->posts[0]);
         } else {
             return null;
         }
     }
 
-
     public function tagTypoId($id)
     {
-        update_field( ACF_TYPO_ID, $id, $this->ID );
+        update_field(ACF_TYPO_ID, $id, $this->ID);
     }
 
     public function tagTypoUrl($url)
     {
-        update_field( ACF_TYPO_URL, $url, $this->ID );
+        update_field(ACF_TYPO_URL, $url, $this->ID);
     }
 
     public function setAttachedGames($elements)
     {
-        //fr('attach games');
-        //fr($elements);
-        if( sizeof($elements) > 0)
-        {
+        if (sizeof($elements) > 0) {
             $games = array();
             foreach ($elements as $typoId) {
-                if ( !empty($typoId) && is_numeric($typoId) && $typoId > 0) {
-                    //fr('add game');
+                if (!empty($typoId) && is_numeric($typoId) && $typoId > 0) {
                     $game = Game::findByTypoId($typoId);
                     $games[] = $game->ID;
                 }
             }
-            //fr($games);
-            update_field( ACF_JEUX_LIES , $games, $this->ID );
+            update_field(ACF_JEUX_LIES, $games, $this->ID);
         }
     }
 
     public function addAttachedGame($game)
     {
-        update_field( ACF_JEUX_LIES , array($game->ID), $this->ID );
+        update_field(ACF_JEUX_LIES, array($game->ID), $this->ID);
     }
 
     public static function getAttachedGames($newsCategories)
@@ -233,18 +231,19 @@ class Post
             $replace = array('<p>\1</p><p>', '</p><p>\1</p>');
             $clean_txt = preg_replace($patterns, $replace, $clean_txt);
 
-            // indexe tous les urls -> peu être supprimé en prod
-            $xmlDoc = new DOMDocument();
-            $xmlDoc->loadHTML($clean_txt);
-            $a = $xmlDoc->getElementsByTagName('a');
+            // indexe tous les urls -> peut être supprimé en prod
+            if (strpos($clean_txt, 'href') > 0) {
+                $xmlDoc = new DOMDocument();
+                $xmlDoc->loadHTML($clean_txt);
+                $a = $xmlDoc->getElementsByTagName('a');
 
-            for ($i = 0; $i < $a->length; $i++) {
-                $link = $a->item($i)->getAttribute('href');
-                if (strpos($link, NOM_DE_DOMAINE) !== false) {
-                    array_push(self::$link_domain, $link);
+                for ($i = 0; $i < $a->length; $i++) {
+                    $link = $a->item($i)->getAttribute('href');
+                    if (strpos($link, NOM_DE_DOMAINE) !== false) {
+                        array_push(Post::$link_domain, $link);
+                    }
                 }
             }
-
             return $clean_txt;
         }
 
@@ -253,7 +252,7 @@ class Post
 
     public static function addLinkReplacement($url1, $url2)
     {
-        array_push(self::$link_replacement, array(
+        array_push(Post::$link_replacement, array(
             'url_typo' => $url1, 'url_wp' => $url2
         ));
     }
@@ -282,13 +281,12 @@ class Post
         //		$chemin = "//img[@src]";
         //		$images = $path->query($chemin);
 
-        $imagesUrls = array();
         for ($i = 0; $i < $images->length; $i++) {
-            $cheminArray = explode('/', $images->item($i)->getAttribute('src')); // sépare l'url dans un tableau selon les /
-            $name = array_pop($cheminArray); // récupère le nom du fichier et l'enlève du tableau. On va s'en servir pour le nettoyer et qu'il soit propre dans wp
-            $chemin = implode('/', $cheminArray); // reconstitue l'url sans le nom du fichier au bout
+            $cheminArray = explode('/', $images->item($i)->getAttribute('src'));        // sépare l'url dans un tableau selon les /
+            $name = array_pop($cheminArray);                                            // récupère le nom du fichier et l'enlève du tableau. On va s'en servir pour le nettoyer et qu'il soit propre dans wp
+            $chemin = implode('/', $cheminArray);                                       // reconstitue l'url sans le nom du fichier au bout
 
-            $attach_id = self::fetch_media($chemin . '/' . str_replace(' ', '%20', $name), Tools::cleanFilename($name, $time)); // ajoute l'image via wp
+            $attach_id = Gallery::fetch_media($chemin . '/' . str_replace(' ', '%20', $name), Tools::cleanFilename($name, time())); // ajoute l'image via wp
             $new_img_url = wp_get_attachment_url($attach_id); // récupère l'url de l'image
             $content = str_replace($images->item($i)->getAttribute('src'), $new_img_url, $content); // remplace la veille url pointant sur typo par celle pointant vers le nouveau fichier
         }
@@ -301,7 +299,7 @@ class Post
         $bdd = new PDO('mysql:host=' . HOST . ';dbname=' . BD_NAME_WP . '', '' . LOGIN . '', '' . PASSWORD . '', array(
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES UTF8'
         ));
-        foreach (self::$link_replacement as $link) {
+        foreach (Post::$link_replacement as $link) {
             $sql = "update wp_posts set post_content = replace(post_content, ?, ?)";
             $req = $bdd->prepare($sql);
             $req->execute(array($link['url_typo'], $link['url_wp']));

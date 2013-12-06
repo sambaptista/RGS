@@ -21,6 +21,8 @@ class Tools
         $name = iconv("utf-8", "us-ascii//TRANSLIT", $name);
         $name = strtolower($name);
         $name = preg_replace('~[^-a-z0-9_]+~', '', $name);
+        $name = str_replace('.jpg.jpg', '.jpg', $name);
+        $name = str_replace('.png.png', '.png', $name);
 
         if ($addAfter) {
             $name .= '-' . $addAfter;
@@ -68,7 +70,6 @@ class Tools
 
     public static function getLinkText($string)
     {
-
         $xmlDoc = new DOMDocument();
         @$xmlDoc->loadHTML($string);
 

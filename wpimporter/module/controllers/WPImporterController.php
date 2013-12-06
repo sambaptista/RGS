@@ -47,6 +47,9 @@ class WPImporterController
 
         f('Taille de la BD : ' . RGSBD::getInstance()->displayBDSize(), ' weight2');
 
+        fr(count(Gallery::$urls));
+        fr(Gallery::$urls);
+
         if (count($this->errors) > 0 ){
             f('*** Importation terminée avec des erreurs ****', 'weight4 error');
             fr($this->errors, 'weight4 error');
@@ -64,7 +67,10 @@ class WPImporterController
 
     public static function testimport()
     {
-        fr('test import');
+
+
+        fr(Gallery::fetch_media('uploads/media/STR.png', 'turlututu.png'));
+
         //$fiche = Game::create('jeu test');
         $fiche = Game::findById(18584);
 
@@ -124,4 +130,17 @@ class WPImporterController
 
         $res = update_field($field_key, $value, $fiche->ID);
     }
+
+    //	public function testPurifier()
+    //	{
+    //		$dirty_html = '<span></span><p style="background:black" class="align-center"><font size="5" color="#0066ff"><strong>Dawn of War 2 </strong></font></p><p class="align-center"><font size="5" color="#0066ff"><strong><em>- E-Sport -</em></strong></font></p><p class="align-center"><strong><em><font size="5" color="#0066ff"></font></em></strong></p><p class="align-left"><font color="#000000">Dans ce dossier, seront regroupées toutes les activités E-Sport spécifiques à Dawn of War 2. Notamment nos tournois francophones "Les Cups of Coffee", la sélection de léquipe de France, le ladder français et le championnat international par équipe.</font></p><p class="align-left">Les tableaux seront mis à jour réguièrement.</p><p class="align-left">Notre section E-sport</p><p class="align-left">Notre section internationale</p><p class="align-left"></p>';
+    //		$config = HTMLPurifier_Config::createDefault();
+    //		$config->set('AutoFormat.RemoveEmpty', true);
+    //		$config->set('HTML.ForbiddenAttributes', array('class', 'style', 'align', 'dir') );
+    //		$config->set('HTML.ForbiddenElements', array('font', 'strong', 'em', 'script', 'b', 'u') );
+    //
+    //		$purifier = new HTMLPurifier($config);
+    //		$clean_txt = $purifier->purify($dirty_html);
+    //		echo htmlentities($clean_txt);
+    //	}
 }
