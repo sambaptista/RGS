@@ -7,3 +7,4 @@ wpimporter/data/output/html_propre/*
 wpimporter/data/output/html_sale/*
 wpimporter/data/logs/*
 wordpress/htdocs/wp-content/uploads/*
+wordpress/htdocs/wp-content/themes/rgs/css_sass/cache/*

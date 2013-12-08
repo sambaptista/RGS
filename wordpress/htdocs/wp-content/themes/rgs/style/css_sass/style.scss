@@ -1,0 +1,305 @@
+/*
+    Theme Name: RGS
+    Author: RGS Team
+    Author URI: http://www.jeux-strategie.com/
+    Version: 1.0
+    Text Domain: RGS
+*/
+
+
+@import "compass/reset";
+
+@import "variables";
+@import "bootstrap";
+@import "font-awesome/font-awesome";
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* General */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+body{
+    font-family:$rgs-font-paragraph;
+    background: $rgs-background;
+}
+
+.body{
+    width:$rgs-body-size;
+    padding:0 $rgs-default-body-padding;
+    margin:0 auto 0 auto;
+}
+
+#page {
+    background: $rgs-page-background;
+}
+
+.show-grid{
+    margin-bottom:15px;
+}
+
+
+/*
+@media (max-width: @screen-xs-max) { ... }
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { ... }
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) { ... }
+@media (min-width: @screen-lg-min) { ... }
+*/
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* Network Bar */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#network-bar{
+    $height:32px;
+    height:$height;
+    line-height:$height;
+    background:black;
+    border-bottom:2px solid $rgs-color-light;
+
+
+    #network-logo{
+        margin-right:30px
+    }
+
+    .network-element{
+        display:inline-block;
+        vertical-align:top;
+        height:$height - 3px;
+        margin-top:3px;
+
+        li{
+            display:inline-block;
+            vertical-align:top;
+            &:last-child a{border-right:none;}
+        }
+
+        a{
+            display:inline-block;
+            vertical-align:top;
+            height:20px;
+            line-height: 20px;
+            padding:0 7px 0 4px;
+            margin: 5px 0px;
+            color:white;
+            font-size:11px;
+            text-decoration:none;
+            border-right:1px solid #fff;
+            &:hover{border-bottom:1px solid $rgs-color;}
+        }
+    }
+
+    #login{
+        float:right;
+        height:$height;
+        font-size:11px;
+        color:#000000;
+        font-weight:bold;
+        background:url(../deco/bg_login.png) no-repeat;
+        margin:0 50px 0 0;
+
+        form{
+            position:relative;
+            right:-50px;
+            width:310px;
+            padding-right:50px;
+            background:url(../deco/bg_login.png) no-repeat right;
+        }
+
+        #login-form{
+            padding: 8px;
+            @include round-b;
+            background:#ff9030;
+            display:none;
+            position:absolute;
+
+            &.show{display:block;}
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* Category Bar */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#category-bar{
+    background:url(../deco/bg_categories.png);
+    width:$rgs-body-size;
+    padding:0 $rgs-default-body-padding;
+    height:99px;
+    margin:50px auto 0 auto;
+
+}
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* Section nav bar */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#section-nav-bar{
+
+    position:relative;
+    margin-left:-15px;
+    margin-right:-15px;
+    box-shadow: 0 0px 3px rgba(0,0,0,0.3);
+    @include verticalGradient(#e8e8e8, #fff);
+    border-top:1px solid white;
+
+    height:4em;
+    line-height:4em;
+    font-size:16px;
+
+    .menu{
+        display:inline-block;
+        vertical-align:top;
+        margin-top:0.5em;
+    }
+
+    ul{
+        margin-bottom:0;
+        height:3em;
+        ul{display:none}
+
+        li{
+            display:inline-block;
+            vertical-align:top;
+            position:relative;
+            border-right:1px solid #ccc;
+            height:inherit;
+            line-height:3em;
+
+            a{
+                display:inline-block;
+                height:inherit;
+                line-height:inherit;
+                color:#333333;
+                text-decoration:none;
+                padding:0 1.5em;
+
+                &:hover{
+                    color: $rgs-color;
+                }
+                .js &:after{
+                    content:'JS';
+                    color:$rgs-color;
+                    margin-left:10px;
+                    //position:relative;
+                    //left:-1em;
+                }
+            }
+        }
+    }
+
+
+    #submitForm{
+        display:inline-block;
+        vertical-align:top;
+        position:relative;
+        height:3em;
+
+        margin-top:0.5em;
+        margin-right:15px;
+        margin-left:15px;
+
+        .btn-link{
+            position:absolute;
+            left:0;
+            top:0;
+            line-height:3.3em;
+            color:#aaa;
+            padding:0;
+        }
+
+        &:hover{
+            #submitFormInput{ border-bottom:1px solid #ccc !important; }
+            .btn-link{
+                color:$brand-primary;
+            }
+        }
+
+        #submitFormInput{
+            display:block;
+            width:15em;
+            padding-left:2em;
+            padding-top:0.4em;
+            line-height:2em;
+            outline: 0;
+            border-color:transparent !important;
+            background-color:transparent !important;
+            border-bottom:1px solid transparent !important;
+
+            &:focus{outline:0}
+        }
+    }
+}
+
+
+
+#body{
+    width:$rgs-body-size;
+    padding:10px $rgs-default-body-padding;
+    margin: 0 auto;
+    background:url(../deco/bg_body_vertical.png) repeat-y;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

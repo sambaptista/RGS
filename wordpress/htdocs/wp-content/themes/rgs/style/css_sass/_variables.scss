@@ -1,0 +1,197 @@
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* Network variables */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+/* RGS */
+$rgs-default-padding:   10px;
+$rgs-default-body-padding: $rgs-default-padding + 4px;
+
+$rgs-body-size:         988px - 2*$rgs-default-body-padding;
+
+$rgs-btn-top:           #fed72a;
+$rgs-btn-bot:           #fcb11c;
+$rgs-btn-border-top:    #ffef43;
+
+
+$rgs-color-light:       #ffcb4f;
+$rgs-color:             #ff9000;
+$brand-primary:         $rgs-color;
+$rgs-color-dark:        #f77d21;
+$rgs-font-title:        Lato,Arial,sans-serif;
+$rgs-font-paragraph:    'Open Sans',Lato,Arial,sans-serif;
+$rgs-background:        #151515 url(../deco/bg.jpg) repeat-y center top;
+$rgs-page-background:   #fff;
+
+$rgs-grid-color:        #aaa;
+
+/* SC2 */
+
+/* Strategium */
+
+/* 39-45 */
+
+
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* Models */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+/* Round */
+@mixin round($radius:5px) {
+  @include round-tl($radius);
+  @include round-tr($radius);
+  @include round-bl($radius);
+  @include round-br($radius);
+}
+
+
+@mixin round-b($radius:5px) {
+    @include round-bl($radius);
+    @include round-br($radius);
+}
+
+@mixin round-t($radius:5px) {
+    @include round-tl($radius);
+    @include round-tr($radius);
+}
+
+@mixin round-l($radius:5px) {
+    @include round-tl($radius);
+    @include round-bl($radius);
+}
+
+@mixin round-r($radius:5px) {
+    @include round-tr($radius);
+    @include round-br($radius);
+}
+
+
+
+
+
+
+@mixin round-tl($radius:5px) {
+  @include round-corner(top,left,$radius);
+}
+@mixin round-tr($radius:5px) {
+  @include round-corner(top,right,$radius);
+}
+@mixin round-br($radius:5px) {
+  @include round-corner(bottom,right,$radius);
+}
+@mixin round-bl($radius:5px) {
+  @include round-corner(bottom,left,$radius);
+}
+
+
+@mixin round-corner($vert, $horz, $radius:5) {
+  border-#{$vert}-#{$horz}-radius: $radius;
+}
+
+
+
+/* Btn */
+
+
+
+
+@mixin rgsbtn( $padding:3px 10px,$font-size:12px,$font-weight:bold,$radius:5px,$color1:$rgs-btn-top,$color2:$rgs-btn-bot,$border-color:$rgs-btn-border-top)
+{
+    display:inline-block;
+    vertical-align:middle;
+    text-decoration:none;
+    text-align:center;
+    padding:$padding;
+    height:auto;
+    border:none;
+    @include round($radius);
+    font-size:$font-size;
+    line-height:1.2em;
+    font-weight:$font-weight;
+    color:#000000;
+    cursor:pointer;
+
+    background-color:$color1;
+    background-image: -moz-linear-gradient(top, $color1 0%, $color2 100%);
+    background-image: -webkit-linear-gradient(top, $color1 0%, $color2 100%);
+    background-image: -o-linear-gradient(top, $color1 0%, $color2 100%);
+    background-image: -ms-linear-gradient(top, $color1 0% ,$color2 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color2', endColorstr='$color2',GradientType=0 );
+    background-image: linear-gradient(top, $color1 0% ,$color2 100%);
+
+    box-shadow:0px 1px 1px #000000, inset 0px 1px 3px $border-color;
+
+    &:hover{
+        $ratio:1.15;
+        $border-color:$border-color*$ratio;
+        $color1:$color1*$ratio;
+        $color2:$color2*$ratio;
+
+        background-color:$color1;
+        background-image: -moz-linear-gradient(top, $color1 0%, $color2 100%);
+        background-image: -webkit-linear-gradient(top, $color1 0%, $color2 100%);
+        background-image: -o-linear-gradient(top, $color1 0%, $color2 100%);
+        background-image: -ms-linear-gradient(top, $color1 0% ,$color2 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color2', endColorstr='$color2',GradientType=0 );
+        background-image: linear-gradient(top, $color1 0% ,$color2 100%);
+    }
+    &:active{
+        position:relative;
+        top:1px;
+        box-shadow:0px 0px 1px #000000, inset 0px 1px 2px $border-color;
+    }
+}
+
+
+
+
+
+.rgsbutton{
+    @include rgsbtn(4px 10px, 12px,normal,4px);
+}
+
+.rgsbutton.little{
+    @include rgsbtn(3px 5px, 11px,normal,3px);
+}
+.rgsbutton.big{
+    @include rgsbtn(5px 15px, 14px,bold,5px);
+}
+
+
+
+@mixin verticalGradient($color1, $color2) {
+
+    background-color:$color1;
+    background-image: -moz-linear-gradient(top, $color1 0%, $color2 100%);
+    background-image: -webkit-linear-gradient(top, $color1 0%, $color2 100%);
+    background-image: -o-linear-gradient(top, $color1 0%, $color2 100%);
+    background-image: -ms-linear-gradient(top, $color1 0% ,$color2 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color2', endColorstr='$color2',GradientType=0 );
+    background-image: linear-gradient(top, $color1 0% ,$color2 100%);
+}
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* debug variables */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+$bred:1px solid red;
+$bblue:1px solid blue;
+$borange:1px solid orange;
+$bwhite:1px solid white;
+
+.red{border:$bred;}
+.blue{border:$bblue;}
+
+.debug .row { background: red; }
+.debug [class*="col"] { background: orange; }
+.debug [class*="col"] * { background: rgba(0,0,0,0.2); }
