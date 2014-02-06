@@ -41,6 +41,11 @@ class Rgsbd
 			FROM information_schema.TABLES
 			where table_schema like '" . BD_NAME_WP . "'");
 
+            fr("
+			SELECT sum( data_length + index_length ) / 1024 / 1024 'MB'
+			FROM information_schema.TABLES
+			where table_schema like '" . BD_NAME_WP . "'");
+            fr($result);
         return $result[0]['MB'];
 
     }
@@ -151,6 +156,12 @@ class Rgsbd
 			ALTER TABLE wp_posts AUTO_INCREMENT=" . ($i_posts) . ";
 			ALTER TABLE wp_postmeta AUTO_INCREMENT=" . ($i_postmetas) . ";
 		");
+    }
+
+    public function resetNews()
+    {
+        $this->query("delete from wp_posts where post_type = ?", array(News::$post_type));
+
     }
 
     private function resetFiles()

@@ -67,29 +67,29 @@ class WPImporterController
 
     public static function testimport()
     {
-
-
-        fr(Gallery::fetch_media('uploads/media/STR.png', 'turlututu.png'));
+       //fr(Gallery::fetch_media('uploads/media/STR.png', 'turlututu.png'));
 
         //$fiche = Game::create('jeu test');
-        $fiche = Game::findById(18584);
+        $news = News::findById(34039);
 
-//        $meta_values = get_post_meta( $fiche->ID, 'typo_id');
-//        fr($meta_values);
+        $content = '
+            <pre class=""><span style="display:inline-block;width:100px">9 s 	 -&gt;</span> <p>Dépêche publiée sur le(s) site(s) suivant(s):<br><a href="http://www.jeux-strategie.com/">Jeux-Strategie.com</a><br>Postée par: scherlock</p>
+            <p><br>Détenir le pouvoir absolu est votre but dans ce jeu dont nous vous avions déjà parlé il y a quelques temps. Super Power 2 se situ dans un environnement contemporain ou il vous faudra gérer une crise mondiale pour vous imposer par des moyens militaires et diplomatiques. <br>
+            Aujourd’hui, Golem Labs, nous propose d’en découvrir plus grâce à une jolie vidéo de présentation accès sur la découverte de l’interface du jeu et sur la stratégie autour de la carte du globe terrestre.<br><a href="http://www.gamershell.com/download_5497.shtml">Télécharger la vidéo sur GamerShell.com (2,3 Mo)</a> <br></p><br></pre>';
+
+
+        $values = array("texte" => $content, "acf_fc_layout" => "contenu_sur_une_colonne");
+        update_field(ACF_CONTENU_REDACTION, array($values), $news->ID);
+
+        exit();
 
         $query = new WP_Query(
             array(
                 'post_type' => 'page',
                 'meta_key' => 'typo_id',
-                'meta_value' => 1523));
-//
-//                'meta_query' => array(
-//                    'key' => 'typo_id',
-//                    'value' => 1523,
-//                    'type'    => 'NUMERIC',
-//                )
-//            )
-//        );
+                'meta_value' => 1523)
+        );
+
 
         fr(count($query->posts));
         foreach($query->posts as $post){

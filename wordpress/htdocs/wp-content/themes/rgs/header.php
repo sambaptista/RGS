@@ -17,7 +17,7 @@
 <body <?php body_class('js'); ?>>
 
 <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-    <a class='btn btn-link' href=/" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+    <a class='btn btn-link' href="/" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 </nav>
 
 <div id="page" class="container hfeed site">
@@ -26,17 +26,13 @@
 			<?php
                 wp_nav_menu( array(
                     'theme_location' => 'js',
-                    'depth' => 1,
-                    'items_wrap' => '<ul id="%1$s" class="row %2$s">%3$s</ul>',
+                    //'depth' => 1,
+                    'container' => '',
+                    'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
                 ));
             ?>
 
             <?php get_search_form(); ?>
 		</nav><!-- #site-navigation -->
-
-		<?php $header_image = get_header_image();
-		if ( ! empty( $header_image ) ) : ?>
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_url( $header_image ); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" /></a>
-		<?php endif; ?>
 
 	<div id="main" class="wrapper">

@@ -76,7 +76,7 @@ function rgs_setup() {
 	load_theme_textdomain( 'rgs', get_template_directory() . '/languages' );
 
 	// This theme styles the visual editor with editor-style.css to match the theme style.
-	add_editor_style();
+	add_editor_style('style/css/editor-style.css');
 
 	// Adds RSS feed links to <head> for posts and comments.
 	add_theme_support( 'automatic-feed-links' );
@@ -85,7 +85,10 @@ function rgs_setup() {
 	add_theme_support( 'post-formats', array( 'aside', 'image', 'link', 'quote', 'status' ) );
 
 	// This theme uses wp_nav_menu() in one location.
-	register_nav_menu( 'primary', __( 'Primary Menu', 'rgs' ) );
+
+
+	register_nav_menu( 'js', 'JS' );
+	register_nav_menu( 'sc2', 'SC2FR' );
 
 	/*
 	 * This theme supports custom background color and image, and here

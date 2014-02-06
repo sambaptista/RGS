@@ -27,7 +27,7 @@ class Term
         return $class::$term_type;
     }
 
-    public static function create($name)
+    public static function create($name, $slug='')
     {
         if(is_numeric($name)) {
             $message = self::getTermType() . " ". $name . ", Not inserted, numeric given. String expected";
@@ -39,7 +39,7 @@ class Term
         if ($term) {
             return $term;
         } else {
-            $term = wp_insert_term($name, self::getTermType()) ;
+            $term = wp_insert_term($name, self::getTermType(), array('slug' => $slug)) ;
             if (is_array($term)) {
                 return self::findbyId($term['term_id']);
             } else {

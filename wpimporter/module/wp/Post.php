@@ -121,14 +121,18 @@ class Post
         update_field(ACF_TYPO_URL, $url, $this->ID);
     }
 
-    public function setAttachedGames($elements)
+    public function setAttachedGames($elements, $wpid = false)
     {
         if (sizeof($elements) > 0) {
             $games = array();
-            foreach ($elements as $typoId) {
-                if (!empty($typoId) && is_numeric($typoId) && $typoId > 0) {
-                    $game = Game::findByTypoId($typoId);
-                    $games[] = $game->ID;
+            foreach ($elements as $id) {
+                if (!empty($id) && is_numeric($id) && $id > 0) {
+                    if (!$wpid) {
+                        $game = Game::findByTypoId($id);
+                        $games[] = $game->ID;
+                    } else {
+                        $games[] = $id;
+                    }
                 }
             }
             update_field(ACF_JEUX_LIES, $games, $this->ID);
@@ -140,28 +144,7 @@ class Post
         update_field(ACF_JEUX_LIES, array($game->ID), $this->ID);
     }
 
-    public static function getAttachedGames($newsCategories)
-    {
-        if (empty($newsCategories)) {
-            return;
-        }
 
-        $newsCategories = explode(',', $newsCategories);
-        if (sizeof($newsCategories) == 0) {
-            return;
-        }
-
-        $games = array();
-        foreach ($newsCategories as $nC) {
-            if (isset(self::$newsCats[$nC]) && sizeof(self::$newsCats[$nC]) > 0) {
-                foreach (self::$newsCats[$nC] as $newsCat) {
-                    array_push($games, $newsCat);
-                }
-            }
-        }
-
-        return $games;
-    }
 
     /**
      * Nettoie le code des artifices html
@@ -186,8 +169,6 @@ class Post
 
                 $filename_dirty = 'output/html_sale/' . $element['id'] . '-' . Tools::cleanFilename($element['name']) . '.html';
                 $filename = 'output/html_propre/' . $element['id'] . '-' . Tools::cleanFilename($element['name']) . '.html';
-
-                p('created ' . $filename, 'weight1');
 
                 file_put_contents($filename_dirty, $dirty_html);
                 file_put_contents($filename, $clean_html);
@@ -303,24 +284,6 @@ class Post
             $sql = "update wp_posts set post_content = replace(post_content, ?, ?)";
             $req = $bdd->prepare($sql);
             $req->execute(array($link['url_typo'], $link['url_wp']));
-        }
-    }
-
-    public function buildGenresIndex()
-    {
-        foreach (self::$fiches as $fiche) {
-            $genres = $fiche['newsType'];
-            if (isset($genres) && sizeof($genres) > 0) {
-                foreach ($genres as $genre) {
-                    if (!empty($genre)) {
-                        if (!isset(self::$newsCats[$genre])) {
-                            self::$newsCats[$genre] = array($fiche['wp_post_id']);
-                        } else {
-                            array_push(self::$newsCats[$genre], $fiche['wp_post_id']);
-                        }
-                    }
-                }
-            }
         }
     }
 

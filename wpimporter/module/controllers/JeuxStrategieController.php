@@ -32,7 +32,9 @@ class JeuxStrategieController extends WPImporterController
         $this->teo = new TypoExporterController();
         //frx(Tools::getStructure($this->teo->arbre));
         Rgsbd::getInstance()->resetWP($resetTaxonomies, true, true);
+        //Rgsbd::getInstance()->resetNews();
 
+        exit();
         $this->insertSections();
         if ($resetTaxonomies) {
             $this->insertGenres();
@@ -40,6 +42,7 @@ class JeuxStrategieController extends WPImporterController
         $this->insertFiches();
         $this->insertPages();
         $this->insertGalleries();
+        $this->insertNews();
     }
 
     private function insertGenres()
@@ -55,7 +58,7 @@ class JeuxStrategieController extends WPImporterController
 
     private function insertSections()
     {
-        Section::create('jeux-stragegie.com');
+        Section::create('jeux-stragegie.com', 'js');
     }
 
     /*
@@ -84,8 +87,11 @@ class JeuxStrategieController extends WPImporterController
         f('Fiches de jeu', 'weight3');
 
         foreach ($this->teo->fiches_de_jeu as $typoId => $data) {
-
             try{
+
+                if ($data['newsType']) {
+                    fr($data['newsType'], 'success');
+                }
                 f($data['nomJeu'], 'weight2');
 
                 $fiche = Game::create($data['nomJeu']);
@@ -104,7 +110,7 @@ class JeuxStrategieController extends WPImporterController
                 $section = Section::findByName('jeux-stragegie.com');
                 wp_set_object_terms($fiche->ID, (int) $section->ID, Section::$term_type);
 
-                $fiche->addACFFields($data);
+                //$fiche->addACFFields($data);
 
             } catch (Exception $e) {
                 $this->errors[] = $e->getMessage();
@@ -204,6 +210,76 @@ class JeuxStrategieController extends WPImporterController
                         break;
                     }
                 }
+            }
+        }
+    }
+
+
+
+
+
+    /*
+    *  add a repeater row on a taxonomy!!!
+    */
+
+    //$field_key = "repeater_field";
+    //$post_id = "event_123";
+    //$value = get_field($field_key, $post_id);
+    //$value[] = array("sub_field_1" => "Foo", "sub_field_2" => "Bar");
+    //update_field( $field_key, $value, $post_id );
+
+
+    /*
+    *  add a flexible content row
+    *  - each row needs an extra key "acf_fc_layout" holding the name of the layout (string)
+    */
+
+    //$field_key = "flexible_field";
+    //$value = get_field($field_key);
+    //$value[] = array("sub_field_1" => "Foo1", "sub_field_2" => "Bar1", "acf_fc_layout" => "layout_1_name");
+    //$value[] = array("sub_field_x" => "Foo2", "sub_field_y" => "Bar2", "acf_fc_layout" => "layout_2_name");
+    //update_field( $field_key, $value, $post_id );
+
+
+    /*
+    'news'	=> array(
+        0 => array(
+            'id' =>  => '...',
+            'date_creation' =>  '...',
+            'name' => '...',
+            'author' => '...',
+            'liaison_news' => '...',
+            'content' => '...'
+         )
+    */
+    private function insertNews()
+    {
+        f('Indexation genres' ,'weight3');
+        News::buildGenresIndex($this->teo->fiches_de_jeu);
+
+        f('News' ,'weight3');
+        foreach($this->teo->news as $i => $data) {
+
+            try {
+                f('News n° : '.$i.' - '.$data['name'], 'weight2');
+
+                $content = News::getCleanText($data['content']);
+                $content = Page::replaceImages($content);
+
+                $news = News::create($data['name'], null, array('post_date' => date('Y-m-d H:i:s', $data['date_creation']) ));
+                $news->tagTypoId($data['id']);
+
+                $values = array("texte" => $content, "acf_fc_layout" => "contenu_sur_une_colonne");
+                update_field(ACF_CONTENU_REDACTION, array($values), $news->ID);
+
+                $news->setAttachGames($data);
+
+                if ($i > NB_NEWS*50) {
+                    break;
+                }
+            } catch (Exception $e) {
+                array_push($this->errors, $e->getMessage());
+                Log::logError($e->getMessage(), __LINE__, __FILE__);
             }
         }
     }

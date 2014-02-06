@@ -10194,8 +10194,12 @@ body {
 /* line 149, ../css_sass/style.scss */
 #section-nav-bar {
   position: relative;
+  height: 4em;
+  line-height: 4em;
   margin-left: -15px;
   margin-right: -15px;
+  border-top: 1px solid white;
+  font-size: 16px;
   box-shadow: 0 0px 3px rgba(0, 0, 0, 0.3);
   background-color: #e8e8e8;
   background-image: -moz-linear-gradient(top, #e8e8e8 0%, white 100%);
@@ -10204,10 +10208,12 @@ body {
   background-image: -ms-linear-gradient(top, #e8e8e8 0%, white 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$color2', endColorstr='$color2',GradientType=0 );
   background-image: linear-gradient(top, #e8e8e8 0%, #ffffff 100%);
-  border-top: 1px solid white;
-  height: 4em;
-  line-height: 4em;
-  font-size: 16px;
+}
+@media (max-width: 1199px) {
+  /* line 149, ../css_sass/style.scss */
+  #section-nav-bar {
+    font-size: 12px;
+  }
 }
 /* line 162, ../css_sass/style.scss */
 #section-nav-bar .menu {
@@ -10266,20 +10272,26 @@ body {
 #section-nav-bar #submitForm .btn-link {
   position: absolute;
   left: 0;
-  top: 0;
-  line-height: 3.3em;
+  top: 0.3em;
+  height: 40px;
   color: #aaa;
   padding: 0;
 }
-/* line 224, ../css_sass/style.scss */
+@media (max-width: 1199px) {
+  /* line 214, ../css_sass/style.scss */
+  #section-nav-bar #submitForm .btn-link {
+    top: 0em;
+  }
+}
+/* line 225, ../css_sass/style.scss */
 #section-nav-bar #submitForm:hover #submitFormInput {
   border-bottom: 1px solid #ccc !important;
 }
-/* line 225, ../css_sass/style.scss */
+/* line 226, ../css_sass/style.scss */
 #section-nav-bar #submitForm:hover .btn-link {
   color: #ff9000;
 }
-/* line 230, ../css_sass/style.scss */
+/* line 231, ../css_sass/style.scss */
 #section-nav-bar #submitForm #submitFormInput {
   display: block;
   width: 15em;
@@ -10291,12 +10303,12 @@ body {
   background-color: transparent !important;
   border-bottom: 1px solid transparent !important;
 }
-/* line 241, ../css_sass/style.scss */
+/* line 242, ../css_sass/style.scss */
 #section-nav-bar #submitForm #submitFormInput:focus {
   outline: 0;
 }
 
-/* line 248, ../css_sass/style.scss */
+/* line 249, ../css_sass/style.scss */
 #body {
   width: 960px;
   padding: 10px 14px;
